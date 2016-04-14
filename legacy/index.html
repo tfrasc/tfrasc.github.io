@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+<head>
+        <link rel='stylesheet' type='text/css' href='style.css'/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="script.js"></script>
+</head>
+<body bgcolor = #595F61>
+    <div class="top">
+        <h1 id="title">Tyler's Webpage</h1>
+    </div>
+	<br>
+    <div style="text-align: center;">
+		<div class="tab selected" id="about"><a title="Learn about me here!">About</a></div>
+        <div class="tab" id="resume"><a  title="See my Resume here!">Resume</a></div>
+<!--			<div id="dot"></div> -->
+        <div class="tab" id="portfolio"><a  title="See various projects I have worked on here!">Portfolio</a></div>
+<!--				<div id="dot"></div> -->
+        <div class="tab" id="contact"><a  title="See my contact information here!">Contact</a></div>
+<!--				<div id="dot"></div> -->
+        <div class="tab" id="page"><a title="See this webpage's information here!">Page</a></div>
+    </div>
+	<div></div>
+	<br>
+	<div id="block">
+		<script> $('#block').load('about.html'); </script>
+	</div>
+</body>
+</html>
