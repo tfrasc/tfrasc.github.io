@@ -1,20 +1,34 @@
 var app = angular.module("portfolio", [ ]);
 
 app.controller("TabController", function() {
+  this.currentTab = 0;
   this.tabs = [
     {
-      label: "Home"
+      label: "Home",
+      URL: "#"
     },
     {
-      label: "Skills"
+      label: "Skills",
+      URL: "#"
     },
     {
-      label: "Porfolio"
+      label: "Porfolio",
+      URL: "#"
     },
     {
-     label: "Contact"
+      label: "Contact",
+      URL: "#"
     },
     {
-     label: "Info"
+      label: "Info",
+      URL: "https://www.google.com"
     }];
+
+  this.setTab = function(tabIndex){
+    this.currentTab = tabIndex;
+  };
+
+  this.isSet = function(tabIndex){
+    return this.currentTab === tabIndex;
+  };
 });
