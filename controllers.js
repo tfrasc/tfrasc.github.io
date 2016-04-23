@@ -36,7 +36,41 @@ app.controller("HomeController", function() {
 });
 
 app.controller("SkillsController", function() {
-
+  this.languages = [
+    {
+      name: "C/C++",
+      skillLevel: "Advanced",
+      libraries: [
+        {
+          name: "SDL",
+          skillLevel: "Intermediate"
+        },
+        {
+          name: "STL",
+          skillLevel: "Intermediate"
+        }
+      ]
+    },
+    {
+      name: "Javascript",
+      skillLevel: "Intermediate",
+      libraries: [
+        {
+          name: "AngularJS",
+          skillLevel: "Beginner"
+        },
+        {
+          name: "jQuery",
+          skillLevel: "Intermediate"
+        }
+      ]
+    },
+    {
+      name: "Ruby",
+      skillLevel: "Intermediate",
+      libraries: [ { name: "Ruby on Rails", skillLevel: "Exposure"} ]      
+    }
+  ];
 });
 
 app.controller("PortfolioController", function() {
