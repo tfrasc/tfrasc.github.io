@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <title>Tyler Frasca</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
-  <script type="text/javascript" src="angular.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers.js"></script>
+  <script src="routes.js"></script>
+
 </head>
+
 <body ng-app="portfolio">
 
 <div class="container">
-  <div class="jumbotron">
+  <div class="jumbotron text-center">
     <h1>Tyler Frasca</h1>
   </div>
-  <div ng-controller="TabController as tabCtrl">
+  <div ng-controller="TabController as TabCtrl">
     <ul class="nav-justified nav-pills">
-      <li ng-repeat="tab in tabCtrl.tabs" ng-click="tabCtrl.setTab($index)" ng-class="{active:tabCtrl.isSet($index)}"><a href={{tab.URL}}>
-      {{ tab.label }}</a></li>
+
+      <li ng-repeat="tab in TabCtrl.tabs" ng-click="TabCtrl.setTab($index)" ng-class="{active:TabCtrl.isSet($index)}">
+      <a href={{tab.URL}}>{{ tab.label }}</a></li>
+
     </ul>
   </div>
+</div>
+
+<div class="container">
+  <div ng-view></div>
 </div>
 
 </body>
