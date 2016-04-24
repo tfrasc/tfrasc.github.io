@@ -69,6 +69,38 @@ app.controller("SkillsController", function() {
       name: "Ruby",
       skillLevel: "Intermediate",
       libraries: [ { name: "Ruby on Rails", skillLevel: "Exposure"} ]      
+    },
+    {
+      name: "SQL (MSSQL)",
+      skillLevel: "Intermediate"     
+    },
+    {
+      name: "PHP",
+      skillLevel: "Beginner",    
+    },
+    {
+      name: "Python",
+      skillLevel: "Intermediate"  
+    },
+    {
+      name: "HTML/CSS",
+      skillLevel: "Advanced",
+      libraries: [ { name: "Bootstrap", skillLevel: "Intermediate"} ]      
+    },
+    {
+      name: "C#",
+      skillLevel: "Beginner",
+      libraries: [ { name: "WPF", skillLevel: "Beginner"} ]      
+    },
+    {
+      name: "C#",
+      skillLevel: "Beginner",
+      libraries: [ { name: "WPF", skillLevel: "Beginner"} ]      
+    },
+    {
+      name: "Lua",
+      skillLevel: "Beginner",
+      libraries: [ { name: "Love", skillLevel: "Beginner"} ]      
     }
   ];
 });
