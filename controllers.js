@@ -10,7 +10,7 @@ app.controller("TabController", function() {
       URL: "#/skills"
     },
     {
-      label: "Porftolio",
+      label: "Portfolio",
       URL: "#/portfolio"
     },
     {
