@@ -103,6 +103,31 @@ app.controller("SkillsController", function() {
       libraries: [ { name: "Love", skillLevel: "Beginner"} ]      
     }
   ];
+
+  this.software = [
+  {
+    name: "Linux",
+    skillLevel: "Intermediate",
+    libraries: [
+      {
+        name: "Ubuntu",
+        skillLevel: "Intermediate"
+      },
+      {
+        name: "Backtrack/Kali",
+        skillLevel: "Beginner"
+      }
+    ]
+  },
+  {
+    name: "Git",
+    skillLevel: "Intermediate"
+  },
+  {
+    name: "Visual Studio",
+    skillLevel: "Intermediate"
+  }
+  ];
 });
 
 app.controller("PortfolioController", function() {

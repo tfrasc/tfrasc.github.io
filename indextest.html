@@ -1,0 +1,86 @@
+<!--
+USED FOR TESTING LINKS, ROUTES DON'T WORK ON LOCAL FILES
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Tyler Frasca</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers.js"></script>
+  <script src="routes.js"></script>
+
+</head>
+
+<body ng-app="portfolio">
+
+<div class="container">
+  <div class="jumbotron text-center">
+    <h1>Tyler Frasca</h1>
+  </div>
+  <div ng-controller="TabController as TabCtrl">
+    <ul class="nav-justified nav-pills">
+
+      <li ng-repeat="tab in TabCtrl.tabs" ng-click="TabCtrl.setTab($index)" ng-class="{active:TabCtrl.isSet($index)}">
+      <a href={{tab.URL}}>{{ tab.label }}</a></li>
+
+    </ul>
+  </div>
+</div>
+
+<br><br>
+
+<div class="container" ng-controller="SkillsController as SkillCtrl">
+<h2 class>Languages and Frameworks</h2>
+  <table class="table table-responsive">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Skill Level</th>
+      </tr>
+    </thead>
+    <tbody ng-repeat="language in SkillCtrl.languages">
+      <tr class="info" >
+        <td>{{language.name}}</td>
+        <td>{{language.skillLevel}}</td>
+      </tr>
+      <tr ng-repeat="library in language.libraries">
+          <td>{{library.name}}</td>
+          <td>{{library.skillLevel}}</td>
+      </tr>
+    </tbody>
+  </table>
+<br><br>
+
+<h2 class>Software and Development Tools</h2>
+<!--TODO: make collapsable-->
+<table class="table table-responsive">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Skill Level</th>
+    </tr>
+  </thead>
+  <tbody ng-repeat="warez in SkillCtrl.software">
+<!--TODO: link each language to the projects they're used in on Portfolio page w/ new column-->
+    <tr class="info">
+      <td>{{warez.name}}</td>
+      <td>{{warez.skillLevel}}</td>
+    </tr>
+    <tr ng-repeat="version in warez.libraries">
+      <td>{{version.name}}</td>
+      <td>{{version.skillLevel}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</body>
+</html>
