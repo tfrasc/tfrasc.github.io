@@ -130,11 +130,21 @@ app.controller("ProjectsController", function() {
     {
       name: "Taylor's Mugs (Website)",
       link: "https://taylorsmugs.github.io/",
+      picture: "pages/pictures/taylorsmugs1.PNG",
       description: "Custom website for a friend who paints and sells mugs",
       goals: "Develop a website from scratch without CSS libraries, "
               + "experiment with jQuery and AJAX, "
-              + "and get exposure to an API for a popoular social media site (Instagram)",
+              + "and get exposure to an API for a popular social media site (Instagram)",
       languages: ["HTML/CSS", "Javascript", "jQuery"]
+    },
+    {
+      name: "1080 App (C# WPF Application)",
+      link: "https://github.com/tfrasc/1080App",
+      description: "App to show off beta items of 1080 Avalanche Gamecube game",
+      goals: "Develop an application with C# and WPF, "
+              + "venture outside of Linux development, "
+              + "and show off the cool stuff I've found in my favorite game",
+      languages: ["C#", "WPF"]
     }
   ];
 });

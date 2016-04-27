@@ -4,10 +4,11 @@
     <h2 style="display: inline">{{project.name}}</h2>   
     <h2 style="display: inline"><a href={{project.link}}>{{project.link}}</a></h2>
     <h4>{{project.description}}</h4>
-    <!--TODO: Pictures for Projects-->
+    <img src={{project.picture}} style="padding-top: 5px; padding-bottom: 5px;">
     <h4>Goal(s): {{project.goals}}.</h4>
     <h4>Languages(s):
       <span ng-repeat="language in project.languages"> {{language}} </span>
     </h4>
+    <br><br>
   </div>
 </div>
