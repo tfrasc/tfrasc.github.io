@@ -93,11 +93,6 @@ app.controller("SkillsController", function() {
       libraries: [ { name: "WPF", skillLevel: "Beginner"} ]      
     },
     {
-      name: "C#",
-      skillLevel: "Beginner",
-      libraries: [ { name: "WPF", skillLevel: "Beginner"} ]      
-    },
-    {
       name: "Lua",
       skillLevel: "Beginner",
       libraries: [ { name: "Love", skillLevel: "Beginner"} ]      
