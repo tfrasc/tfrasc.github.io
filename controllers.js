@@ -10,8 +10,8 @@ app.controller("TabController", function() {
       URL: "#/skills"
     },
     {
-      label: "Portfolio",
-      URL: "#/portfolio"
+      label: "Projects",
+      URL: "#/projects"
     },
     {
       label: "Contact",
@@ -130,8 +130,18 @@ app.controller("SkillsController", function() {
   ];
 });
 
-app.controller("PortfolioController", function() {
-
+app.controller("ProjectsController", function() {
+  this.projects = [
+    {
+      name: "Taylor's Mugs (Website)",
+      link: "https://taylorsmugs.github.io/",
+      description: "Custom website for a friend who paints and sells mugs",
+      goals: "Develop a website from scratch without CSS libraries, "
+              + "experiment with jQuery and AJAX, "
+              + "and get exposure to an API for a popoular social media site (Instagram)",
+      languages: ["HTML/CSS", "Javascript", "jQuery"]
+    }
+  ];
 });
 
 app.controller("ContactController", function() {

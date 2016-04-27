@@ -8,9 +8,9 @@ app.config(function($routeProvider) {
       templateUrl : 'pages/skills.html',
       controller : 'SkillsController'
     })
-    .when('/portfolio', {
-      templateUrl : 'pages/portfolio.html',
-      controller : 'PortfolioController'
+    .when('/projects', {
+      templateUrl : 'pages/projects.html',
+      controller : 'ProjectsController'
     })
     .when('/contact', {
       templateUrl : 'pages/contact.html',

@@ -29,7 +29,7 @@ USED FOR TESTING LINKS, ROUTES DON'T WORK ON LOCAL FILES
     <ul class="nav-justified nav-pills">
 
       <li ng-repeat="tab in TabCtrl.tabs" ng-click="TabCtrl.setTab($index)" ng-class="{active:TabCtrl.isSet($index)}">
-      <a href={{tab.URL}}>{{ tab.label }}</a></li>
+      <a href={{tab.URL}}>{{tab.label}}</a></li>
 
     </ul>
   </div>
@@ -37,49 +37,31 @@ USED FOR TESTING LINKS, ROUTES DON'T WORK ON LOCAL FILES
 
 <br><br>
 
-<div class="container" ng-controller="SkillsController as SkillCtrl">
-<h2 class>Languages and Frameworks</h2>
-  <table class="table table-responsive">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Skill Level</th>
-      </tr>
-    </thead>
-    <tbody ng-repeat="language in SkillCtrl.languages">
-      <tr class="info" >
-        <td>{{language.name}}</td>
-        <td>{{language.skillLevel}}</td>
-      </tr>
-      <tr ng-repeat="library in language.libraries">
-          <td>{{library.name}}</td>
-          <td>{{library.skillLevel}}</td>
-      </tr>
-    </tbody>
-  </table>
-<br><br>
+<div class="container" ng-controller="ProjectsController as ProjectCtrl">
+  <div ng-repeat="project in ProjectCtrl.projects">
+    <h2 style="display: inline">{{project.name}}</h2>   
+    <h2 style="display: inline"><a href={{project.link}}>{{project.link}}</a></h2>
+    <h4>{{project.description}}</h4>
+    <!--TODO: Pictures for Projects-->
+    <h5>Goal(s): {{project.goals}}.</h5>
+    <h5>Languages(s):
+      <span ng-repeat="language in project.languages"> {{language}} </span>
+    </h5>
+  </div>
 
-<h2 class>Software and Development Tools</h2>
-<!--TODO: make collapsable-->
-<table class="table table-responsive">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Skill Level</th>
-    </tr>
-  </thead>
-  <tbody ng-repeat="warez in SkillCtrl.software">
-<!--TODO: link each language to the projects they're used in on Portfolio page w/ new column-->
-    <tr class="info">
-      <td>{{warez.name}}</td>
-      <td>{{warez.skillLevel}}</td>
-    </tr>
-    <tr ng-repeat="version in warez.libraries">
-      <td>{{version.name}}</td>
-      <td>{{version.skillLevel}}</td>
-    </tr>
-  </tbody>
-</table>
+  <h2>1080 App (WPF Application)</h2>
+
+  <h2>Ionic iOS App (Reddit API)</h2>
+
+  <h2>Jailbreak Tweaks</h2>
+
+  <h2>Taylor's Mugs Website</h2>
+
+  <h2>Drain (Unity Game)</h2>
+
+  <h2>Zanzibrrr (Halo 2 Mod)</h2>
+
+  <h2>Drain (Unity Game)</h2>
 </div>
 
 </body>
