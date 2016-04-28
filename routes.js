@@ -1,9 +1,5 @@
 app.config(function($routeProvider) {
   $routeProvider
-    .when('', {
-      templateUrl : 'pages/home.html',
-      controller : 'HomeController'
-    })
     .when('/skills', {
       templateUrl : 'pages/skills.html',
       controller : 'SkillsController'
@@ -19,5 +15,8 @@ app.config(function($routeProvider) {
     .when('/info', {
       templateUrl : 'pages/info.html',
       controller : 'InfoController'
+    })
+    .otherwise({
+      redirectTo : 'pages/home.html'
     })
 })
