@@ -105,7 +105,7 @@ app.controller("SkillsController", function() {
           skillLevel: "Intermediate"
         }
       ]
-    },   
+    },
     {
       name: "Lua",
       skillLevel: "Beginner",
@@ -149,11 +149,13 @@ app.controller("ProjectsController", function() {
       goals: "Develop a website from scratch without CSS libraries, "
               + "experiment with jQuery and AJAX, "
               + "and get exposure to an API for a popular social media site (Instagram)",
+              //Plus the opporunity to use other peoples github stuff
       languages: ["HTML/CSS", "Javascript", "jQuery"]
     },
     {
       name: "1080 App (C# WPF Application)",
       link: "https://github.com/tfrasc/1080App",
+      picture: "pages/pictures/1080app.PNG",
       description: "App to show off beta items of 1080 Avalanche Gamecube game",
       goals: "Develop an application with C# and WPF, "
               + "venture outside of Linux development, "
