@@ -105,7 +105,7 @@ app.controller("SkillsController", function() {
           skillLevel: "Intermediate"
         }
       ]
-    },
+    },   
     {
       name: "Lua",
       skillLevel: "Beginner",
