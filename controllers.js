@@ -91,7 +91,7 @@ app.controller("SkillsController", function() {
       name: "C#",
       skillLevel: "Beginner",
       libraries: [ { name: "WPF", skillLevel: "Beginner"} ]      
-    },,
+    },
     {
       name: "Java",
       skillLevel: "Intermediate",
@@ -105,7 +105,7 @@ app.controller("SkillsController", function() {
           skillLevel: "Intermediate"
         }
       ]
-    }
+    },
     {
       name: "Lua",
       skillLevel: "Beginner",
