@@ -135,6 +135,10 @@ app.controller("SkillsController", function() {
   {
     name: "Visual Studio",
     skillLevel: "Intermediate"
+  },
+  {
+    name: "Unity Game Engine",
+    skillLevel: "Beginner"
   }
   ];
 });
@@ -151,6 +155,7 @@ app.controller("ProjectsController", function() {
               + "and get exposure to an API for a popular social media site (Instagram)",
               //Plus the opporunity to use other peoples github stuff
       languages: ["HTML/CSS", "Javascript", "jQuery"]
+      //add a TODO
     },
     {
       name: "1080 App (C# WPF Application)",
@@ -161,6 +166,15 @@ app.controller("ProjectsController", function() {
               + "venture outside of Linux development, "
               + "and show off the cool stuff I've found in my favorite game",
       languages: ["C#", "WPF"]
+    },
+    {
+      name: "Drain (Unity Game)",
+      picture: "pages/pictures/Drain.PNG",
+      description: "Small eagle-eye puzzle game with goal of getting marble down the drain",
+      goals: "Get exposure to a popular game engine (Unity), "
+              + "venture into game development with C#, "
+              + "and better understand game development process",
+      languages: ["C#"]
     }
   ];
 });
