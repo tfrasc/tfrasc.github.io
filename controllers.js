@@ -138,6 +138,10 @@ app.controller("SkillsController", function() {
     skillLevel: "Intermediate"
   },
   {
+    name: "LAMP Stack",
+    skillLevel: "Beginner"
+  },
+  {
     name: "Visual Studio",
     skillLevel: "Intermediate"
   },
