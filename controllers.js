@@ -3,7 +3,7 @@ app.controller("TabController", function() {
   this.tabs = [
     {
       label: "Home",
-      URL: ""
+      URL: "#/home"
     },
     {
       label: "Skills",
