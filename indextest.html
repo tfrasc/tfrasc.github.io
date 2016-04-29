@@ -38,28 +38,11 @@ USED FOR TESTING LINKS, ROUTES DON'T WORK ON LOCAL FILES
 <br><br>
 
 <div class="container" ng-controller="ProjectsController as ProjectCtrl">
-  <div ng-repeat="project in ProjectCtrl.projects">
-    <h2 style="display: inline">{{project.name}}</h2>   
-    <h2 style="display: inline"><a href={{project.link}}>{{project.link}}</a></h2>
-    <h4>{{project.description}}</h4>
-    <img src={{project.picture}} style="padding-top: 5px; padding-bottom: 5px;">
-    <!--TODO: Pictures for Projects-->
-    <h4>Goal(s): {{project.goals}}.</h4>
-    <h4>Languages(s):
-      <span ng-repeat="language in project.languages"> {{language}} </span>
-    </h4>
-    <br><br>
-  </div>
-
-  <h2>Ionic iOS App (Reddit API)</h2>
-
-  <h2>Jailbreak Tweaks</h2>
-
-  <h2>Drain (Unity Game)</h2>
-
-  <h2>Zanzibrrr (Halo 2 Mod)</h2>
-
-  <h2>Drain (Unity Game)</h2>
+  <h2>About Me</h2>
+  <img src="pages/pictures/home3.PNG">
+  <h4>I'm currently pursuing Bachelors of Science in Computer Science and Engineering at the University of Nevada, Reno minoring in Mathematics and Cyber Security.</h4>
+  <h4>I have a strong passion for coding (really all things computers) and am always eager to learn something new.</h4>
+  <h4>Along with my love for coding, I enjoy hiking and biking around the beautiful hills of Tahoe and Truckee.</h4>
 </div>
 
 </body>
