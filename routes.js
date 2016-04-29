@@ -17,6 +17,7 @@ app.config(function($routeProvider) {
       controller : 'InfoController'
     })
     .otherwise({
-      templateUrl : 'pages/home.html'
+      templateUrl : 'pages/home.html',
+      controller : "HomeController"
     })
 })
