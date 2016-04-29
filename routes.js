@@ -4,6 +4,10 @@ app.config(function($routeProvider) {
       templateUrl : 'pages/skills.html',
       controller : 'SkillsController'
     })
+    .when('/resume', {
+      templateUrl : 'pages/resume.html',
+      controller : 'ResumeController'
+    })
     .when('/projects', {
       templateUrl : 'pages/projects.html',
       controller : 'ProjectsController'
@@ -11,10 +15,6 @@ app.config(function($routeProvider) {
     .when('/contact', {
       templateUrl : 'pages/contact.html',
       controller : 'ContactController'
-    })
-    .when('/info', {
-      templateUrl : 'pages/info.html',
-      controller : 'InfoController'
     })
     .otherwise({
       templateUrl : 'pages/home.html',

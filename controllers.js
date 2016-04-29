@@ -1,9 +1,17 @@
+app.controller("HomeController", function() {
+
+});
+
 app.controller("TabController", function() {
   this.currentTab = 0;
   this.tabs = [
     {
       label: "Home",
       URL: ""
+    },
+    {
+      label: "Resume",
+      URL: "#/resume"
     },
     {
       label: "Skills",
@@ -16,10 +24,6 @@ app.controller("TabController", function() {
     {
       label: "Contact",
       URL: "#/contact"
-    },
-    {
-      label: "Info",
-      URL: "#/info"
     }];
 
   this.setTab = function(tabIndex){
@@ -31,7 +35,8 @@ app.controller("TabController", function() {
   };
 });
 
-app.controller("HomeController", function() {
+
+app.controller("ResumeController", function() {
 
 });
 
@@ -180,9 +185,5 @@ app.controller("ProjectsController", function() {
 });
 
 app.controller("ContactController", function() {
-
-});
-
-app.controller("InfoController", function() {
 
 });
