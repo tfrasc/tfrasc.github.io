@@ -75,6 +75,16 @@
       ]
     },
     {
+      "name": "Other Programming Languages",
+      "level": "Intermediate",
+      "keywords": [
+        "Ruby",
+        "SQL (MSSQL)",
+        "C#",
+        "PHP"
+      ]
+    },
+    {
       "name": "Web Development",
       "level": "Intermediate",
       "keywords": [
