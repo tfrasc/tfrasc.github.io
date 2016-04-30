@@ -12,9 +12,9 @@ app.config(function($routeProvider) {
       templateUrl : 'pages/projects.html',
       controller : 'ProjectsController'
     })
-    .when('/contact', {
-      templateUrl : 'pages/contact.html',
-      controller : 'ContactController'
+    .when('/profiles', {
+      templateUrl : 'pages/profiles.html',
+      controller : 'ProfileController'
     })
     .otherwise({
       templateUrl : 'pages/home.html',

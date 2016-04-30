@@ -22,8 +22,8 @@ app.controller("TabController", function() {
       URL: "#/projects"
     },
     {
-      label: "Contact",
-      URL: "#/contact"
+      label: "Profiles",
+      URL: "#/profiles"
     }];
 
   this.setTab = function(tabIndex){
@@ -188,10 +188,10 @@ app.controller("ProjectsController", function() {
   ];
 });
 
-app.controller("ContactController", function() {
-  this.contacts = [
+app.controller("ProfileController", function() {
+  this.profiles = [
     {
-      name: "linkedIn",
+      name: "LinkedIn",
       URL: "https://www.linkedin.com/in/tyler-frasca-92083bb9?trk=nav_responsive_tab_profile",
       picture: "pages/pictures/logo-linkedin.svg"
     },

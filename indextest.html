@@ -37,10 +37,10 @@ USED FOR TESTING LINKS, ROUTES DON'T WORK ON LOCAL FILES
 
 <br><br>
 
-<div class="container text-center" ng-controller="ContactController as ContactCtrl">
-  <div ng-repeat="contact in ContactCtrl.contacts" style="display: inline-block; padding-right: 100px;">
-    <h2>{{contact.name}}</h2>
-    <a href={{contact.URL}}><img src={{contact.picture}} style="height: 100px;"></a>
+<div class="container text-center" ng-controller="ProfileController as ProfileCtrl">
+  <div ng-repeat="profile in ProfileCtrl.profiles" style="display: inline-block; padding-right: 100px;">
+    <h2>{{profile.name}}</h2>
+    <a href={{profile.URL}}><img src={{profile.picture}} style="height: 100px;"></a>
   </div>
 </div>
 </div>
