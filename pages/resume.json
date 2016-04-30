@@ -1,0 +1,97 @@
+{
+  "basics": {
+    "name": "Tyler Frasca",
+    "label": "Programmer",
+    "picture": "pictures/me.PNG",
+    "email": "tfrasc@gmail.com",
+    "phone": "(775) 813-3468",
+    "website": "http://tfrasc.github.io",
+    "summary": "Currently a junior majoring in Computer Science and Engineering looking to gain knowledge and experience in Software Development. Eager to dive further into the industry in Application Programming or Web Development. Experience in programming and I.T. with a passion for coding, learning and solving problems.",
+    "location": {
+      "address": "1055 Oak St Apt 17",
+      "postalCode": "NV 89503",
+      "city": "Reno",
+      "countryCode": "US",
+      "region": "Nevada"
+    },
+    "profiles": [
+      {
+        "network": "",
+        "username": "",
+        "url": ""
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "PCLender, LLC",
+      "position": "Junior Developer",
+      "website": "https://home.pclender.com",
+      "startDate": "2016-01-01",
+      "endDate": "2016-01-01",
+      "highlights": [
+        "Learning, formally documenting, and teaching an in-house programming language",
+        "Agile Software Development using Jira",
+        "Quality Assurance and billable Professional Services work in the language"
+      ]
+    },
+    {
+      "company": "Eldorado Resort and Casino",
+      "position": "Computer Operator I",
+      "startDate": "2013-12-01",
+      "endDate": "2016-01-01",
+      "highlights": [
+        "Help desk and hands-on troubleshooting across large, integrated computer and slot machine networks",
+        "Responsibility of monitoring and maintaining systems on two separate properties",
+        "Heading and participating in property-wide projects and tasks",
+        "Tasked with creation of new documentation as well as updating legacy documentation",
+        "Working alone and as a team on a wide variety of hardware, software, and networking issues",
+        "Passing on and picking up work orders through a daily communication log with other team members",
+        "Moderate control over end-user network and applications access for security and auditing regulations"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Nevada, Reno",
+      "area": "Computer Science and Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2013-08-01",
+      "endDate": "2018-05-01",
+      "gpa": "3.535",
+      "courses": [
+        "CS302 - Data Structures",
+        "CS477 - Algorithms",
+        "CS446 - Operating Systems"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Object-oriented Programming",
+      "level": "Advanced",
+      "keywords": [
+        "C/C++"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "level": "Intermediate",
+      "keywords": [
+        "HTML",
+        "CSS (Bootstrap)",
+        "Javascript (jQuery, Angular)",
+        "MVC"
+      ]
+    }
+  ],
+  "interests": [
+    {
+      "name": "Cyber Security",
+      "keywords": [
+        "Backtrack/Kali Linux",
+        "Metasploit"
+      ]
+    }
+  ]
+}
