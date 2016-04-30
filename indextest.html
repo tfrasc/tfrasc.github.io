@@ -37,12 +37,12 @@ USED FOR TESTING LINKS, ROUTES DON'T WORK ON LOCAL FILES
 
 <br><br>
 
-<div class="container" ng-controller="ProjectsController as ProjectCtrl">
-  <h2>About Me</h2>
-  <img src="pages/pictures/home3.PNG">
-  <h4>I'm currently pursuing Bachelors of Science in Computer Science and Engineering at the University of Nevada, Reno minoring in Mathematics and Cyber Security.</h4>
-  <h4>I have a strong passion for coding (really all things computers) and am always eager to learn something new.</h4>
-  <h4>Along with my love for coding, I enjoy hiking and biking around the beautiful hills of Tahoe and Truckee.</h4>
+<div class="container text-center" ng-controller="ContactController as ContactCtrl">
+  <div ng-repeat="contact in ContactCtrl.contacts" style="display: inline-block; padding-right: 100px;">
+    <h2>{{contact.name}}</h2>
+    <a href={{contact.URL}}><img src={{contact.picture}} style="height: 100px;"></a>
+  </div>
+</div>
 </div>
 
 </body>

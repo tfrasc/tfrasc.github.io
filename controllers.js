@@ -189,5 +189,21 @@ app.controller("ProjectsController", function() {
 });
 
 app.controller("ContactController", function() {
-
+  this.contacts = [
+    {
+      name: "linkedIn",
+      URL: "https://www.linkedin.com/in/tyler-frasca-92083bb9?trk=nav_responsive_tab_profile",
+      picture: "pages/pictures/logo-linkedin.svg"
+    },
+    {
+      name: "GitHub",
+      URL: "https://github.com/tfrasc",
+      picture: "pages/pictures/github.png"
+    },
+    {
+      name: "Stack Overflow",
+      URL: "http://stackoverflow.com/users/5561398/tfrasc",
+      picture: "pages/pictures/icon-stackoverflow.svg"
+    }    
+  ]
 });
