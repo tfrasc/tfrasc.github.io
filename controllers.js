@@ -163,6 +163,7 @@ app.controller("ProjectsController", function() {
               + "experiment with jQuery and AJAX, "
               + "and get exposure to an API for a popular social media site (Instagram)",
               //Plus the opporunity to use other peoples github stuff
+//      todos: [ "Implement Twitter API", "Migrate to ReactJS (or another new JS framework)"],
       languages: ["HTML/CSS", "Javascript", "jQuery"]
       //add a TODO
     },
