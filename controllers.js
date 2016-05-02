@@ -163,7 +163,7 @@ app.controller("ProjectsController", function() {
               + "experiment with jQuery and AJAX, "
               + "and get exposure to an API for a popular social media site (Instagram)",
               //Plus the opporunity to use other peoples github stuff
-//      todos: [ "Implement Twitter API", "Migrate to ReactJS (or another new JS framework)"],
+      todos: [ "Implement Twitter API", "Migrate to ReactJS (or another new JS framework)"],
       languages: ["HTML/CSS", "Javascript", "jQuery"]
       //add a TODO
     },
@@ -175,6 +175,7 @@ app.controller("ProjectsController", function() {
       goals: "Develop an application with C# and WPF, "
               + "venture outside of Linux development, "
               + "and show off the cool stuff I've found in my favorite game",
+      todos: ["Complete animations", "Add pictures of beta items"],
       languages: ["C#", "WPF"]
     },
     {
@@ -184,6 +185,7 @@ app.controller("ProjectsController", function() {
       goals: "Get exposure to a popular game engine (Unity), "
               + "venture into game development with C#, "
               + "and better understand game development process",
+      todos: ["Add more levels", "Add music/sound effects", "Add scoring system"],
       languages: ["C#"]
     }
   ];
