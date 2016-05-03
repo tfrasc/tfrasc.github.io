@@ -166,7 +166,8 @@ app.controller("ProjectsController", function() {
               ],
       todos:  [ "Implement Twitter API",
                 "Add comment capability",
-                "Migrate to ReactJS (or another new JS framework)",
+                "Migrate to ReactJS (or another hip JS framework)",
+                "Incorporate SASS",
                 "Add shopping cart w/ Customizable mug template"
               ],
       languages: ["HTML/CSS", "Javascript", "jQuery"]
