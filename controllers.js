@@ -173,7 +173,7 @@ app.controller("ProjectsController", function() {
       name: "Portfolio Website ($this)",
 //      picture: "pages/pictures/portfolio.PNG",
       description: "Website to display my projects and skills",
-      goals: "Develop a website using newer frameworks and libraries (AngularJS and Bootstrap, "
+      goals: "Develop a website using newer frameworks and libraries (AngularJS and Bootstrap), "
               + "experiment with jQuery and AJAX, "
               + "and get exposure to an API for a popular social media site (Instagram)",
       todos:  [ "Link languages in Skills to filtered Projects",
