@@ -163,9 +163,25 @@ app.controller("ProjectsController", function() {
               + "experiment with jQuery and AJAX, "
               + "and get exposure to an API for a popular social media site (Instagram)",
               //Plus the opporunity to use other peoples github stuff
-      todos: [ "Implement Twitter API", "Migrate to ReactJS (or another new JS framework)"],
+      todos:  [ "Implement Twitter API",
+                "Migrate to ReactJS (or another new JS framework)",
+                "Add shopping cart w/ Customizable mug template"
+              ],
       languages: ["HTML/CSS", "Javascript", "jQuery"]
-      //add a TODO
+    },
+    {
+      name: "Portfolio Website ($this)",
+//      picture: "pages/pictures/portfolio.PNG",
+      description: "Website to display my projects and skills",
+      goals: "Develop a website using newer frameworks and libraries (AngularJS and Bootstrap, "
+              + "experiment with jQuery and AJAX, "
+              + "and get exposure to an API for a popular social media site (Instagram)",
+      todos:  [ "Link languages in Skills to filtered Projects",
+                "Add Experience column to Skills",
+                "Add future Skills/Projects",
+                "Make Projects/Skills collapsable"
+              ],
+      languages: ["HTML/CSS", "Bootstrap", "Javascript", "AngularJS"]
     },
     {
       name: "1080 App (C# WPF Application)",
