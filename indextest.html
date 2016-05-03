@@ -40,18 +40,26 @@ USED FOR TESTING LINKS, ROUTES DON'T WORK ON LOCAL FILES
 <div class="container" ng-controller="ProjectsController as ProjectCtrl">
   <div ng-repeat="project in ProjectCtrl.projects" style="border-bottom-width: 1px; border-bottom-color: #c4b4ab; border-bottom-style: solid;"> 
   <br>
+  <div>
     <h2 style="display: inline">{{project.name}}</h2>   
     <h2 style="display: inline"><a href={{project.link}}>{{project.link}}</a></h2>
     <h4>{{project.description}}</h4>
     <img src={{project.picture}} style="padding-top: 5px; padding-bottom: 5px;">
-    <h4>Goal(s): {{project.goals}}.</h4>
+  </div>
+  <br>
+    <h4 style="display: inline-block">Goal(s): </h4>
+
+    <ul class="nav nav-pills" style="display: inline-block;">
+      <li class="goal" ng-repeat="goal in project.goals">{{goal}}</li>
+    </ul><br>
+
     <h4 style="display: inline-block">TODO: </h4>
 
     <ul class="nav nav-pills" style="display: inline-block;">
       <li class="todo" ng-repeat="todo in project.todos">{{todo}}</li>
     </ul><br>
 
-    <h4 style="display: inline-block">Languages: </h4>
+    <h4 style="display: inline-block">Language(s): </h4>
     <ul class="nav nav-pills" style="display: inline-block;">
       <li class="language" ng-repeat="language in project.languages">{{language}}</li>
     </ul>

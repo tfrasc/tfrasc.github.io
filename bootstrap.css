@@ -4102,6 +4102,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #fff;
   background-color: #337ab7;
 }
+.nav-pills > li.goal {
+  color: #ffffff;
+  padding: 5px 12px;
+  margin-top: 5px;
+  font-size: 15px;
+  border-radius: 6px;
+  background-color: #337ab7;
+}
 .nav-pills > li.todo {
   color: #ffffff;
   padding: 5px 12px;

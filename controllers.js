@@ -158,11 +158,12 @@ app.controller("ProjectsController", function() {
       name: "Taylor's Mugs (Website)",
       link: "https://taylorsmugs.github.io/",
       picture: "pages/pictures/taylorsmugs1.PNG",
-      description: "Custom website for a friend who paints and sells coffee mugs",
-      goals: "Develop a website from scratch without CSS libraries, "
-              + "experiment with jQuery and AJAX, "
-              + "and get exposure to an API for a popular social media site (Instagram)",
-              //Plus the opporunity to use other peoples github stuff
+      description: "Custom website for local artist who paints and sells coffee mugs",
+      goals:  [ "Develop a website from scratch without CSS libraries",
+                "Experiment with jQuery and AJAX",
+                "Get exposure to an API for a popular social media site (Instagram)",
+                "Experiment with the opportunity to use other people's work from GitHub (Formspree)"
+              ],
       todos:  [ "Implement Twitter API",
                 "Migrate to ReactJS (or another new JS framework)",
                 "Add shopping cart w/ Customizable mug template"
@@ -172,10 +173,11 @@ app.controller("ProjectsController", function() {
     {
       name: "Portfolio Website ($this)",
 //      picture: "pages/pictures/portfolio.PNG",
-      description: "Website to display my projects and skills",
-      goals: "Develop a website using newer frameworks and libraries (AngularJS and Bootstrap), "
-              + "experiment with jQuery and AJAX, "
-              + "and get exposure to an API for a popular social media site (Instagram)",
+      description: "Website to display projects and skills",
+      goals:  [ "Develop a website using newer frameworks and libraries (AngularJS and Bootstrap)",
+                "Consolidate Projects and Skills I've done",
+                "Map out future Projects and Skills I will work on"
+              ],
       todos:  [ "Link languages in Skills to filtered Projects",
                 "Add Experience column to Skills",
                 "Add future Skills/Projects",
@@ -188,9 +190,10 @@ app.controller("ProjectsController", function() {
       link: "https://github.com/tfrasc/1080App",
       picture: "pages/pictures/1080app.PNG",
       description: "App to show off beta items of 1080 Avalanche Gamecube game",
-      goals: "Develop an application with C# and WPF, "
-              + "venture outside of Linux development, "
-              + "and show off the cool stuff I've found in my favorite game",
+      goals:  [ "Develop an application with C# and WPF",
+                "Venture outside of Linux development",
+                "Show off the cool stuff I've found in my favorite game"
+              ],
       todos: ["Complete animations", "Add pictures of beta items"],
       languages: ["C#", "WPF"]
     },
@@ -198,9 +201,10 @@ app.controller("ProjectsController", function() {
       name: "Drain (Unity Game)",
       picture: "pages/pictures/Drain.PNG",
       description: "Small eagle-eye puzzle game with goal of getting marble down the drain",
-      goals: "Get exposure to a popular game engine (Unity), "
-              + "venture into game development with C#, "
-              + "and better understand game development process",
+      goals:  [ "Get exposure to a popular game engine (Unity)",
+                "Venture into game development with C#",
+                "Better understand game development process"
+              ],
       todos: ["Add more levels", "Add music/sound effects", "Add scoring system"],
       languages: ["C#"]
     }
