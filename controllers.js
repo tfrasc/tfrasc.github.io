@@ -165,6 +165,7 @@ app.controller("ProjectsController", function() {
                 "Experiment with the opportunity to use other people's work from GitHub (Formspree)"
               ],
       todos:  [ "Implement Twitter API",
+                "Add comment capability",
                 "Migrate to ReactJS (or another new JS framework)",
                 "Add shopping cart w/ Customizable mug template"
               ],
