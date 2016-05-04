@@ -153,8 +153,8 @@ app.controller("SkillsController", function() {
 });
 
 app.controller("ProjectsController", function() {
-  this.toggleShowing = function(project) {
-    project.isShowing = !project.isShowing;
+  this.toggleShowing = function($index) {
+    this.projects[$index].isShowing = !this.projects[$index].isShowing
     console.log("ello mate");
   };
 
