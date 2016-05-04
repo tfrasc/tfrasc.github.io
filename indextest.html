@@ -41,8 +41,12 @@ USED FOR TESTING LINKS, ROUTES DON'T WORK ON LOCAL FILES
   <div ng-repeat="project in ProjectCtrl.projects" style="border-bottom-width: 1px; border-bottom-color: #c4b4ab; border-bottom-style: solid;"> 
   <br>
   <div>
-    <button ng-show="ProjectCtrl.projects[$index].isShowing" ng-click="ProjectCtrl.toggleShowing($index)" class="glyphicon glyphicon-chevron-down" style="border: none; background: none;"></button>
-    <button ng-show="!ProjectCtrl.projects[$index].isShowing" ng-click="ProjectCtrl.toggleShowing($index)" class="glyphicon glyphicon-chevron-up" style="border: none; background: none;"></button>
+    <button ng-show="ProjectCtrl.projects[$index].isShowing" ng-click="ProjectCtrl.toggleShowing($index)" style="border: none; background: none; height: 35px; width: 35px;">
+      <img src="pages/icons/arrow-up.png">
+    </button>
+    <button ng-show="!ProjectCtrl.projects[$index].isShowing" ng-click="ProjectCtrl.toggleShowing($index)" style="border: none; background: none; height: 35px; width: 35px;">
+      <img src="pages/icons/arrow-down.png">
+    </button>
     <h2 style="display: inline">{{project.name}}</h2>   
     <h2 style="display: inline"><a href={{project.link}}>{{project.link}}</a></h2>
     <h4>{{project.description}}</h4>
