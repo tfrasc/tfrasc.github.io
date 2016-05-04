@@ -153,6 +153,11 @@ app.controller("SkillsController", function() {
 });
 
 app.controller("ProjectsController", function() {
+  this.toggleShowing = function(project) {
+    project.isShowing = !project.isShowing;
+    console.log("ello mate");
+  };
+
   this.projects = [
     {
       name: "Taylor's Mugs (Website)",
@@ -170,7 +175,8 @@ app.controller("ProjectsController", function() {
                 "Incorporate SASS",
                 "Add shopping cart w/ Customizable mug template"
               ],
-      languages: ["HTML/CSS", "Javascript", "jQuery"]
+      languages: ["HTML/CSS", "Javascript", "jQuery"],
+      isShowing: true
     },
     {
       name: "Portfolio Website ($this)",
@@ -185,7 +191,8 @@ app.controller("ProjectsController", function() {
                 "Add future Skills/Projects",
                 "Make Projects/Skills collapsable"
               ],
-      languages: ["HTML/CSS", "Bootstrap", "Javascript", "AngularJS"]
+      languages: ["HTML/CSS", "Bootstrap", "Javascript", "AngularJS"],
+      isShowing: true
     },
     {
       name: "1080 App (C# WPF Application)",
@@ -197,7 +204,8 @@ app.controller("ProjectsController", function() {
                 "Show off the cool stuff I've found in my favorite game"
               ],
       todos: ["Complete animations", "Add pictures of beta items"],
-      languages: ["C#", "WPF"]
+      languages: ["C#", "WPF"],
+      isShowing: true
     },
     {
       name: "Drain (Unity Game)",
@@ -208,7 +216,8 @@ app.controller("ProjectsController", function() {
                 "Better understand game development process"
               ],
       todos: ["Add more levels", "Add music/sound effects", "Add scoring system"],
-      languages: ["C#"]
+      languages: ["C#"],
+      isShowing: true
     }
   ];
 });

@@ -41,11 +41,13 @@ USED FOR TESTING LINKS, ROUTES DON'T WORK ON LOCAL FILES
   <div ng-repeat="project in ProjectCtrl.projects" style="border-bottom-width: 1px; border-bottom-color: #c4b4ab; border-bottom-style: solid;"> 
   <br>
   <div>
+    <button ng-show={{project.isShowing}} ng-click="ProjectCtrl.toggleShowing(project)" class="glyphicon glyphicon-chevron-down" style="border: none; background: none;"></button>
+    <button ng-show={{!project.isShowing}} ng-click="ProjectCtrl.toggleShowing(project)" class="glyphicon glyphicon-chevron-up" style="border: none; background: none;"></button>
     <h2 style="display: inline">{{project.name}}</h2>   
     <h2 style="display: inline"><a href={{project.link}}>{{project.link}}</a></h2>
     <h4>{{project.description}}</h4>
+  <div  ng-show={{project.isShowing}}>
     <img src={{project.picture}} style="padding-top: 5px; padding-bottom: 5px;">
-  </div>
   <br>
     <h4 style="display: inline-block">Goal(s): </h4>
 
@@ -64,6 +66,7 @@ USED FOR TESTING LINKS, ROUTES DON'T WORK ON LOCAL FILES
       <li class="language" ng-repeat="language in project.languages">{{language}}</li>
     </ul>
     <br><br>
+  </div>
   </div>
 </div>
 
