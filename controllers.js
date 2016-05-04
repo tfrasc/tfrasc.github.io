@@ -154,7 +154,9 @@ app.controller("SkillsController", function() {
 
 app.controller("ProjectsController", function() {
   this.toggleShowing = function($index) {
-    this.projects[$index].isShowing = !this.projects[$index].isShowing
+    this.projects[$index].isShowing = !this.projects[$index].isShowing;
+    console.log(this.projects[$index].isShowing);
+    console.log(this.projects[0].isShowing);
     console.log("ello mate");
   };
 
