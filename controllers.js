@@ -199,8 +199,7 @@ app.controller("ProjectsController", function() {
               ],
       todos:  [ "Link languages in Skills to filtered Projects",
                 "Add Experience column to Skills",
-                "Add future Skills/Projects",
-                "Make Projects/Skills collapsable"
+                "Add future Skills/Projects"
               ],
       languages: ["HTML/CSS", "Bootstrap", "Javascript", "AngularJS"],
       isShowing: true
