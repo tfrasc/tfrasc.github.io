@@ -41,6 +41,18 @@ app.controller("ResumeController", function() {
 });
 
 app.controller("SkillsController", function() {
+  this.languagesShowing = true;
+  this.softwareShowing = true;
+
+  this.toggleShowing = function(category) {
+    if(category === 'languages') {
+      this.languagesShowing = !this.languagesShowing;
+    }
+    else {
+      this.softwareShowing = !this.softwareShowing;
+    }
+  };
+
   this.languages = [
     {
       name: "C/C++",
@@ -155,9 +167,6 @@ app.controller("SkillsController", function() {
 app.controller("ProjectsController", function() {
   this.toggleShowing = function($index) {
     this.projects[$index].isShowing = !this.projects[$index].isShowing;
-    console.log(this.projects[$index].isShowing);
-    console.log(this.projects[0].isShowing);
-    console.log("ello mate");
   };
 
   this.projects = [

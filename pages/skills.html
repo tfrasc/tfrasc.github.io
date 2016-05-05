@@ -1,7 +1,13 @@
 <div class="container" ng-controller="SkillsController as SkillCtrl">
-<h2 class>Languages and Frameworks</h2>
-<!--TODO: make collapsable-->
-<table class="table table-responsive">
+
+<button ng-show="SkillCtrl.languagesShowing" ng-click="SkillCtrl.toggleShowing('languages')" style="border: none; background: none; height: 35px; width: 35px; display: inline-block;">
+  <img src="pages/icons/arrow-right.png">
+  </button>
+<button ng-show="!SkillCtrl.languagesShowing" ng-click="SkillCtrl.toggleShowing('languages')" style="border: none; background: none; height: 35px; width: 35px; display: inline;">
+  <img src="pages/icons/arrow-down.png">
+</button>
+<h2 style="display: inline-block;">Languages and Frameworks</h2>
+<table class="table table-responsive" ng-show="SkillCtrl.languagesShowing">
   <thead>
     <tr>
       <th>Name</th>
@@ -21,9 +27,14 @@
   </tbody>
 </table><br><br>
 
-<h2 class>Software and Development</h2>
-<!--TODO: make collapsable-->
-<table class="table table-responsive">
+<button ng-show="SkillCtrl.softwareShowing" ng-click="SkillCtrl.toggleShowing('software')" style="border: none; background: none; height: 35px; width: 35px; display: inline;">
+  <img src="pages/icons/arrow-right.png">
+  </button>
+<button ng-show="!SkillCtrl.softwareShowing" ng-click="SkillCtrl.toggleShowing('software')" style="border: none; background: none; height: 35px; width: 35px; display: inline;">
+  <img src="pages/icons/arrow-down.png">
+</button>
+<h2 style="display: inline-block;">Software and Development</h2>
+<table class="table table-responsive" ng-show="SkillCtrl.softwareShowing">
   <thead>
     <tr>
       <th>Name</th>
