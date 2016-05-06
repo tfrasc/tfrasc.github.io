@@ -9,7 +9,6 @@ USED FOR TESTING LINKS, ROUTES DON'T WORK ON LOCAL FILES
   <title>Tyler Frasca</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
   <link rel="stylesheet" type="text/css" href="bootstrap.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
@@ -26,7 +25,7 @@ USED FOR TESTING LINKS, ROUTES DON'T WORK ON LOCAL FILES
     <h1>Tyler Frasca</h1>
   </div>
   <div ng-controller="TabController as TabCtrl">
-    <ul class="nav-justified nav-pills">
+    <ul class="nav nav-justified nav-pills">
 
       <li ng-repeat="tab in TabCtrl.tabs" ng-click="TabCtrl.setTab($index)" ng-class="{active:TabCtrl.isSet($index)}">
       <a href={{tab.URL}}>{{tab.label}}</a></li>
@@ -37,10 +36,40 @@ USED FOR TESTING LINKS, ROUTES DON'T WORK ON LOCAL FILES
 
 <br><br>
 
-<div class="container text-center" ng-controller="ProfileController as ProfileCtrl">
-  <div ng-repeat="profile in ProfileCtrl.profiles" style="display: inline-block; padding-right: 75px;">
-    <h2>{{profile.name}}</h2>
-    <a href={{profile.URL}}><img src={{profile.picture}} style="height: 100px;"></a>
+<div class="container" ng-controller="ProjectsController as ProjectCtrl">
+  <div ng-repeat="project in ProjectCtrl.projects" style="border-bottom-width: 1px; border-bottom-color: #c4b4ab; border-bottom-style: solid;"> 
+  <br>
+  <div>
+    <button ng-show="ProjectCtrl.projects[$index].isShowing" ng-click="ProjectCtrl.toggleShowing($index)" style="border: none; background: none; height: 35px; width: 35px;">
+      <img src="pages/icons/arrow-right.png">
+    </button>
+    <button ng-show="!ProjectCtrl.projects[$index].isShowing" ng-click="ProjectCtrl.toggleShowing($index)" style="border: none; background: none; height: 35px; width: 35px;">
+      <img src="pages/icons/arrow-down.png">
+    </button>
+    <h2 style="display: inline">{{project.name}}</h2>   
+    <h2 style="display: inline"><a href={{project.link}}>{{project.link}}</a></h2>
+    <h4>{{project.description}}</h4>
+  <div  ng-show="ProjectCtrl.projects[$index].isShowing">
+    <img src={{project.picture}} style="padding-top: 5px; padding-bottom: 5px;">
+  <br>
+    <h4 style="display: inline-block">Goal(s): </h4>
+
+    <ul class="nav nav-pills" style="display: inline-block;">
+      <li class="goal" ng-repeat="goal in project.goals">{{goal}}</li>
+    </ul><br>
+
+    <h4 style="display: inline-block">TODO: </h4>
+
+    <ul class="nav nav-pills" style="display: inline-block;">
+      <li class="todo" ng-repeat="todo in project.todos">{{todo}}</li>
+    </ul><br>
+
+    <h4 style="display: inline-block">Language(s): </h4>
+    <ul class="nav nav-pills" style="display: inline-block;">
+      <li class="language" ng-repeat="language in project.languages">{{language}}</li>
+    </ul>
+    <br><br>
+  </div>
   </div>
 </div>
 
