@@ -24,11 +24,22 @@
   },
   "work": [
     {
+      "company": "Elevate Blue",
+      "position": "Web Development Intern",
+      "website": "www.elevate.blue/",
+      "startDate": "2016-06-13",
+      "endDate": "2016-06-13",
+      "highlights": [
+        "Full Stack web development",
+        "Postgres, Ruby on Rails, and React stack"
+      ]
+    },
+    {
       "company": "PCLender, LLC",
       "position": "Junior Developer",
       "website": "https://home.pclender.com",
       "startDate": "2016-01-01",
-      "endDate": "2016-01-01",
+      "endDate": "2016-06-10",
       "highlights": [
         "Learning, formally documenting, and teaching an in-house programming language",
         "Agile Software Development using Jira",

@@ -77,6 +77,10 @@ app.controller("SkillsController", function() {
           skillLevel: "Beginner"
         },
         {
+          name: "ReactJS",
+          skillLevel: "Beginner"
+        },
+        {
           name: "jQuery",
           skillLevel: "Intermediate"
         }
@@ -191,7 +195,7 @@ app.controller("ProjectsController", function() {
     },
     {
       name: "Portfolio Website ($this)",
-//      picture: "pages/pictures/portfolio.PNG",
+      //picture: "pages/pictures/portfolio.PNG",
       description: "Website to display projects and skills",
       goals:  [ "Develop a website using newer frameworks and libraries (AngularJS and Bootstrap)",
                 "Consolidate Projects and Skills I've done",
