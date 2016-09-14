@@ -83,7 +83,7 @@ app.controller("SkillsController", function() {
         {
           name: "Node.js",
           skillLevel: "Beginner"
-        }
+        },
         {
           name: "AngularJS",
           skillLevel: "Beginner"
