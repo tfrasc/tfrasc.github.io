@@ -100,19 +100,7 @@ app.controller("SkillsController", function() {
       libraries: [ { name: "Ruby on Rails", skillLevel: "Intermediate"} ]
     },
     {
-      name: "SQL (MSSQL)",
-      skillLevel: "Intermediate"
-    },
-    {
-      name: "PHP",
-      skillLevel: "Beginner",
-    },
-    {
-      name: "Python",
-      skillLevel: "Intermediate"
-    },
-    {
-      name: "HTML/CSS",
+      name: "HTML5/CSS3",
       skillLevel: "Advanced",
       libraries: [
         {
@@ -124,6 +112,28 @@ app.controller("SkillsController", function() {
           skillLevel: "Intermediate"
         }
       ]
+    },
+    {
+      name: "SQL (MSSQL)",
+      skillLevel: "Intermediate",
+      libraries: [
+        {
+          name: "PostgreSQL",
+          skillLevel: "Intermediate"
+        },
+        {
+          name: "MSSQL",
+          skillLevel: "Beginner"
+        }
+      ]
+    },
+    {
+      name: "PHP",
+      skillLevel: "Beginner"
+    },
+    {
+      name: "Python",
+      skillLevel: "Intermediate"
     },
     {
       name: "C#",
