@@ -63,6 +63,10 @@ app.controller("SkillsController", function() {
           skillLevel: "Intermediate"
         },
         {
+          name: "OpenGL",
+          skillLevel: "Beginner"
+        },
+        {
           name: "STL",
           skillLevel: "Intermediate"
         }
@@ -70,8 +74,16 @@ app.controller("SkillsController", function() {
     },
     {
       name: "Javascript",
-      skillLevel: "Intermediate",
+      skillLevel: "Advanced",
       libraries: [
+        {
+          name: "jQuery",
+          skillLevel: "Advanced"
+        },
+        {
+          name: "Node.js",
+          skillLevel: "Beginner"
+        }
         {
           name: "AngularJS",
           skillLevel: "Beginner"
@@ -79,39 +91,44 @@ app.controller("SkillsController", function() {
         {
           name: "ReactJS",
           skillLevel: "Beginner"
-        },
-        {
-          name: "jQuery",
-          skillLevel: "Intermediate"
         }
       ]
     },
     {
       name: "Ruby",
-      skillLevel: "Intermediate",
-      libraries: [ { name: "Ruby on Rails", skillLevel: "Exposure"} ]      
+      skillLevel: "Advanced",
+      libraries: [ { name: "Ruby on Rails", skillLevel: "Intermediate"} ]
     },
     {
       name: "SQL (MSSQL)",
-      skillLevel: "Intermediate"     
+      skillLevel: "Intermediate"
     },
     {
       name: "PHP",
-      skillLevel: "Beginner",    
+      skillLevel: "Beginner",
     },
     {
       name: "Python",
-      skillLevel: "Intermediate"  
+      skillLevel: "Intermediate"
     },
     {
       name: "HTML/CSS",
       skillLevel: "Advanced",
-      libraries: [ { name: "Bootstrap", skillLevel: "Intermediate"} ]      
+      libraries: [
+        {
+          name: "Bootstrap",
+          skillLevel: "Intermediate"
+        },
+        {
+          name: "SASS",
+          skillLevel: "Intermediate"
+        }
+      ]
     },
     {
       name: "C#",
       skillLevel: "Beginner",
-      libraries: [ { name: "WPF", skillLevel: "Beginner"} ]      
+      libraries: [ { name: "WPF", skillLevel: "Beginner"} ]
     },
     {
       name: "Java",
@@ -130,7 +147,7 @@ app.controller("SkillsController", function() {
     {
       name: "Lua",
       skillLevel: "Beginner",
-      libraries: [ { name: "Love", skillLevel: "Beginner"} ]      
+      libraries: [ { name: "Love", skillLevel: "Beginner"} ]
     }
   ];
 
@@ -187,7 +204,6 @@ app.controller("ProjectsController", function() {
       todos:  [ "Implement Twitter API",
                 "Add comment capability",
                 "Migrate to ReactJS (or another hip JS framework)",
-                "Incorporate SASS",
                 "Add shopping cart w/ Customizable mug template"
               ],
       languages: ["HTML/CSS", "Javascript", "jQuery"],
@@ -224,7 +240,7 @@ app.controller("ProjectsController", function() {
     {
       name: "Drain (Unity Game)",
       picture: "pages/pictures/Drain.PNG",
-      description: "Small eagle-eye puzzle game with goal of getting marble down the drain",
+      description: "Small top-down puzzle game with goal of getting marble down the drain",
       goals:  [ "Get exposure to a popular game engine (Unity)",
                 "Venture into game development with C#",
                 "Better understand game development process"
@@ -252,6 +268,6 @@ app.controller("ProfileController", function() {
       name: "Stack Overflow",
       URL: "http://stackoverflow.com/users/5561398/tfrasc",
       picture: "pages/pictures/icon-stackoverflow.svg"
-    }    
+    }
   ]
 });
