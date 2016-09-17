@@ -217,7 +217,7 @@ app.controller("ProjectsController", function() {
                 "Add shopping cart w/ Customizable mug template"
               ],
       languages: ["HTML/CSS", "Javascript", "jQuery"],
-      isShowing: true
+      isShowing: false
     },
     {
       name: "googlePlacesParser (Open Source Javascript Project)",
@@ -232,7 +232,7 @@ app.controller("ProjectsController", function() {
                 "Error handling and validation"
               ],
       languages: ["Javascript", "jQuery", "HTML/CSS"],
-      isShowing: true
+      isShowing: false
     },
     {
       name: "Portfolio Website ($(this))",
@@ -249,7 +249,7 @@ app.controller("ProjectsController", function() {
                 "Find a better colour scheme for Goals, TODO, and Languages lists on Projects"
               ],
       languages: ["HTML/CSS", "Bootstrap", "Javascript", "AngularJS"],
-      isShowing: true
+      isShowing: false
     },
     {
       name: "Drain (Unity Game)",
@@ -261,7 +261,7 @@ app.controller("ProjectsController", function() {
               ],
       todos: ["Add more levels", "Add music/sound effects", "Add scoring system"],
       languages: ["C#"],
-      isShowing: true
+      isShowing: false
     },
     {
       name: "1080 App (C# WPF Application)",
@@ -274,7 +274,7 @@ app.controller("ProjectsController", function() {
               ],
       todos: ["Complete animations", "Add pictures of beta items"],
       languages: ["C#", "WPF"],
-      isShowing: true
+      isShowing: false
     }
   ];
 });
