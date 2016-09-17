@@ -220,18 +220,47 @@ app.controller("ProjectsController", function() {
       isShowing: true
     },
     {
-      name: "Portfolio Website ($this)",
+      name: "googlePlacesParser",
+      link: "https://github.com/tfrasc/googlePlacesParser",
+      // picture: "pages/pictures/taylorsmugs1.PNG",
+      description: "Simple script to grab Google Places results from input box and parse the results into a simpler format to grab each component (e.g. street, country, etc.)",
+      goals:  [ "Create an open source project for the community to use and contribute to",
+                "Create a simple solution to a software problem that wasn't previous solved"
+              ],
+      todos:  [ "Figure out how to fire the display on the first click of button (might be a timing delay getting the results back from the Google API)",
+                "Fix phone number and vicinity (if possible)",
+                "Error handling and validation"
+              ],
+      languages: ["Javascript", "jQuery", "HTML/CSS"],
+      isShowing: true
+    },
+    {
+      name: "Portfolio Website ($(this))",
       //picture: "pages/pictures/portfolio.PNG",
-      description: "Website to display projects and skills",
+      description: "Website to display my projects and skills",
       goals:  [ "Develop a website using newer frameworks and libraries (AngularJS and Bootstrap)",
                 "Consolidate Projects and Skills I've done",
                 "Map out future Projects and Skills I will work on"
               ],
       todos:  [ "Link languages in Skills to filtered Projects",
+                "Add carousel to display multiple Projects pictures",
                 "Add Experience column to Skills",
-                "Add future Skills/Projects"
+                "Add future Skills/Projects",
+                "Find a better colour scheme for Goals, TODO, and Languages lists on Projects"
               ],
       languages: ["HTML/CSS", "Bootstrap", "Javascript", "AngularJS"],
+      isShowing: true
+    },
+    {
+      name: "Drain (Unity Game)",
+      picture: "pages/pictures/Drain.PNG",
+      description: "Small top-down puzzle game with goal of getting marble down the drain",
+      goals:  [ "Get exposure to a popular game engine (Unity)",
+                "Venture into game development with C#",
+                "Better understand game development process"
+              ],
+      todos: ["Add more levels", "Add music/sound effects", "Add scoring system"],
+      languages: ["C#"],
       isShowing: true
     },
     {
@@ -245,18 +274,6 @@ app.controller("ProjectsController", function() {
               ],
       todos: ["Complete animations", "Add pictures of beta items"],
       languages: ["C#", "WPF"],
-      isShowing: true
-    },
-    {
-      name: "Drain (Unity Game)",
-      picture: "pages/pictures/Drain.PNG",
-      description: "Small top-down puzzle game with goal of getting marble down the drain",
-      goals:  [ "Get exposure to a popular game engine (Unity)",
-                "Venture into game development with C#",
-                "Better understand game development process"
-              ],
-      todos: ["Add more levels", "Add music/sound effects", "Add scoring system"],
-      languages: ["C#"],
       isShowing: true
     }
   ];

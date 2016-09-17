@@ -1,5 +1,5 @@
 <div class="container" ng-controller="ProjectsController as ProjectCtrl">
-  <div ng-repeat="project in ProjectCtrl.projects" style="border-bottom-width: 1px; border-bottom-color: #c4b4ab; border-bottom-style: solid;"> 
+  <div ng-repeat="project in ProjectCtrl.projects" style="border-bottom-width: 1px; border-bottom-color: #c4b4ab; border-bottom-style: solid;">
   <br>
   <div>
     <button ng-show="ProjectCtrl.projects[$index].isShowing" ng-click="ProjectCtrl.toggleShowing($index)" style="border: none; background: none; height: 35px; width: 35px;">
@@ -8,8 +8,8 @@
     <button ng-show="!ProjectCtrl.projects[$index].isShowing" ng-click="ProjectCtrl.toggleShowing($index)" style="border: none; background: none; height: 35px; width: 35px;">
       <img src="pages/icons/arrow-down.png">
     </button>
-    <h2 style="display: inline">{{project.name}}</h2>   
-    <h2 style="display: inline"><a href={{project.link}}>{{project.link}}</a></h2>
+    <h2 style="display: inline">{{project.name}}</h2>
+    <h2 style="font-size: 20px; margin-top: 0px;"><a href={{project.link}}>{{project.link}}</a></h2>
     <h4>{{project.description}}</h4>
   <div  ng-show="ProjectCtrl.projects[$index].isShowing">
     <img src={{project.picture}} style="padding-top: 5px; padding-bottom: 5px;">
@@ -34,3 +34,4 @@
   </div>
   </div>
 </div>
+<br><br><br>
