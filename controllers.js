@@ -245,6 +245,7 @@ app.controller("ProjectsController", function() {
       todos:  [ "Link languages in Skills to filtered Projects",
                 "Add carousel to display multiple Projects pictures",
                 "Add Experience column to Skills",
+                "Fix bug for highlighted tab defaulting home on page refresh",
                 "Add future Skills/Projects",
                 "Find a better colour scheme for Goals, TODO, and Languages lists on Projects"
               ],

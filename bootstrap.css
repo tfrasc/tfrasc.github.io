@@ -4108,7 +4108,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 5px;
   font-size: 15px;
   border-radius: 6px;
-  background-color: #337ab7;
+  background-color: #20BF55;
 }
 .nav-pills > li.todo {
   color: #ffffff;
@@ -4116,14 +4116,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 5px;
   font-size: 15px;
   border-radius: 6px;
-  background-color: #17b05a;
+  background-color: #EE6352;
 }
 .nav-pills > li.language {
   color: #ffffff;
   padding: 5px 12px;
   font-size: 15px;
   border-radius: 6px;
-  background-color: #fa5f05;
+  background-color: #08B2E3;
 }
 .nav-stacked > li {
   float: none;
