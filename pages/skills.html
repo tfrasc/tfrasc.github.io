@@ -44,6 +44,8 @@
   <thead>
     <tr>
       <th>Name</th>
+      <th>Library/Flavor</th>
+      <th></th>
       <th>Skill Level</th>
     </tr>
   </thead>
@@ -51,13 +53,18 @@
 <!--TODO: link each language to the projects they're used in on Portfolio page w/ new column-->
     <tr class="info">
       <td>{{warez.name}}</td>
+      <td></td>
+      <td></td>
       <td>{{warez.skillLevel}}</td>
     </tr>
     <tr ng-repeat="version in warez.libraries">
+      <td></td>
       <td>{{version.name}}</td>
+      <td></td>
       <td>{{version.skillLevel}}</td>
     </tr>
   </tbody>
 </table>
 </div>
 </div>
+<br><br><br>
