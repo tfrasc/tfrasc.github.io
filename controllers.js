@@ -114,7 +114,7 @@ app.controller("SkillsController", function() {
       ]
     },
     {
-      name: "SQL (MSSQL)",
+      name: "SQL",
       skillLevel: "Intermediate",
       libraries: [
         {
