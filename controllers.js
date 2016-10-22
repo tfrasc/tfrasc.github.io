@@ -247,9 +247,11 @@ app.controller("ProjectsController", function() {
       // picture: "pages/pictures/taylorsmugs1.PNG",
       description: "Google Chrome Extension for Reddit to continuously play music on music subreddits",
       goals:  [ "Create a better user experience for a popular website",
+                "Dabble in browser extension programming",
                 "Create a simple solution to a software problem that wasn't previous solved"
               ],
       todos:  [ "Integrate Youtube, Bandcamp, Mixcloud and other API's for plugin",
+                "Submit to Chrome Extension Store after YouTube API implementation",
                 "Integrate Play/Pause commands from popup attached to button"
               ],
       languages: ["Javascript", "jQuery"],
