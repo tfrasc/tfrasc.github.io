@@ -114,12 +114,16 @@ app.controller("SkillsController", function() {
       ]
     },
     {
-      name: "SQL",
+      name: "SQL/noSQL",
       skillLevel: "Intermediate",
       libraries: [
         {
           name: "PostgreSQL",
           skillLevel: "Intermediate"
+        },
+        {
+          name: "MongoDB",
+          skillLevel: "Beginner"
         },
         {
           name: "MSSQL",
@@ -163,7 +167,7 @@ app.controller("SkillsController", function() {
 
   this.software = [
   {
-    name: "Linux",
+    name: "Linux Development/Pentesting",
     skillLevel: "Intermediate",
     libraries: [
       {
@@ -177,8 +181,24 @@ app.controller("SkillsController", function() {
     ]
   },
   {
+    name: "OSX Development",
+    skillLevel: "Intermediate"
+  },
+  {
+    name: "Agile Development",
+    skillLevel: "Intermediate"
+  },
+  {
+    name: "MVC Architecture",
+    skillLevel: "Intermediate"
+  },
+  {
     name: "Git",
     skillLevel: "Intermediate"
+  },
+  {
+    name: "Heroku",
+    skillLevel: "Beginner"
   },
   {
     name: "LAMP Stack",
@@ -202,21 +222,22 @@ app.controller("ProjectsController", function() {
 
   this.projects = [
     {
-      name: "Taylor's Mugs (Website)",
-      link: "https://taylorsmugs.github.io/",
-      picture: "pages/pictures/taylorsmugs1.PNG",
+      name: "Taylor's Mugs (Website) * Redux",
+      link: "https://taylorsmugs.herokuapp.com/",
+      picture: "pages/pictures/taylorsmugsnew.png",
       description: "Custom website for local artist who paints and sells coffee mugs",
-      goals:  [ "Develop a website from scratch without CSS libraries",
-                "Experiment with jQuery and AJAX",
-                "Get exposure to an API for a popular social media site (Instagram)",
-                "Experiment with the opportunity to use other people's work from GitHub (Formspree)"
+      goals:  [ "Develop a simple full-scale rails app",
+                "Create a mobile-friendly site",
+                "Gain experience with automation and deployments via Heroku"
               ],
-      todos:  [ "Implement Twitter API",
-                "Add comment capability",
-                "Migrate to ReactJS (or another hip JS framework)",
-                "Add shopping cart w/ Customizable mug template"
+      todos:  [ "Implement online payment (WePay API)",
+                "Fix HTML5 image dropper with mug/wine/shot glass template",
+                "Create mock admin view to track payments and deliveries",
+                "Add option for wine and shot glasses",
+                "Add reviews to backend and frontend",
+                "Add fun/fancy ui (order counter, etc.)"
               ],
-      languages: ["HTML/CSS", "Javascript", "jQuery"],
+      languages: ["Ruby", "Ruby on Rails", "HTML5/CSS3", "Javascript", "jQuery", "PostgreSQL"],
       isShowing: false
     },
     {
@@ -264,6 +285,24 @@ app.controller("ProjectsController", function() {
                 "Find a better colour scheme for Goals, TODO, and Languages lists on Projects"
               ],
       languages: ["HTML/CSS", "Bootstrap", "Javascript", "AngularJS"],
+      isShowing: false
+    },
+    {
+      name: "Taylor's Mugs (Website) * Legacy",
+      link: "https://taylorsmugs.github.io/",
+      picture: "pages/pictures/taylorsmugs1.png",
+      description: "Custom website for local artist who paints and sells coffee mugs",
+      goals:  [ "Develop a website from scratch without CSS libraries",
+                "Experiment with jQuery and AJAX",
+                "Get exposure to an API for a popular social media site (Instagram)",
+                "Experiment with the opportunity to use other people's work from GitHub (Formspree)"
+              ],
+      todos:  [ "Implement Twitter API",
+                "Add comment capability",
+                "Migrate to ReactJS (or another hip JS framework)",
+                "Add shopping cart w/ Customizable mug template"
+              ],
+      languages: ["HTML/CSS", "Javascript", "jQuery"],
       isShowing: false
     },
     {
