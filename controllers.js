@@ -232,6 +232,7 @@ app.controller("ProjectsController", function() {
               ],
       todos:  [ "Implement online payment (WePay API)",
                 "Fix HTML5 image dropper with mug/wine/shot glass template",
+                "Implement emails to notify admin and user of order",
                 "Create mock admin view to track payments and deliveries",
                 "Add option for wine and shot glasses",
                 "Add reviews to backend and frontend",
