@@ -293,7 +293,7 @@ app.controller("ProjectsController", function() {
     {
       name: "Taylor's Mugs (Website) * Legacy",
       link: "https://taylorsmugs.github.io/",
-      picture: "pages/pictures/taylorsmugs1.png",
+      picture: "pages/pictures/taylorsmugs.png",
       description: "Custom website for local artist who paints and sells coffee mugs",
       goals:  [ "Develop a website from scratch without CSS libraries",
                 "Experiment with jQuery and AJAX",
