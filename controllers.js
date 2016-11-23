@@ -222,7 +222,7 @@ app.controller("ProjectsController", function() {
 
   this.projects = [
     {
-      name: "Taylor's Mugs (Website) * Redux",
+      name: "Taylor's Mugs (Website) *Redux",
       link: "https://taylorsmugs.herokuapp.com/",
       picture: "pages/pictures/taylorsmugsnew.png",
       description: "Custom website for local artist who paints and sells coffee mugs",
@@ -233,9 +233,8 @@ app.controller("ProjectsController", function() {
       todos:  [ "Implement online payment (WePay API)",
                 "Fix HTML5 image dropper with mug/wine/shot glass template",
                 "Implement emails to notify admin and user of order",
-                "Create mock admin view to track payments and deliveries",
+                "Create admin view to track payments and deliveries",
                 "Add option for wine and shot glasses",
-                "Add reviews to backend and frontend",
                 "Add fun/fancy ui (order counter, etc.)"
               ],
       languages: ["Ruby", "Ruby on Rails", "HTML5/CSS3", "Javascript", "jQuery", "PostgreSQL"],
@@ -284,14 +283,13 @@ app.controller("ProjectsController", function() {
                 "Add carousel to display multiple Projects pictures",
                 "Add Experience column to Skills",
                 "Fix bug for highlighted tab defaulting home on page refresh",
-                "Add future Skills/Projects",
-                "Find a better colour scheme for Goals, TODO, and Languages lists on Projects"
+                "Add future Skills/Projects"
               ],
       languages: ["HTML/CSS", "Bootstrap", "Javascript", "AngularJS"],
       isShowing: false
     },
     {
-      name: "Taylor's Mugs (Website) * Legacy",
+      name: "Taylor's Mugs (Website) *Legacy",
       link: "https://taylorsmugs.github.io/",
       picture: "pages/pictures/taylorsmugs.png",
       description: "Custom website for local artist who paints and sells coffee mugs",
