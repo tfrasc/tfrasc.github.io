@@ -1,6 +1,8 @@
 <div class="container text-center" ng-controller="ProfileController as ProfileCtrl">
   <div ng-repeat="profile in ProfileCtrl.profiles" style="display: inline-block; padding-right: 75px;">
     <h2>{{profile.name}}</h2>
-    <a href={{profile.URL}}><img src={{profile.picture}} style="height: 100px;"></a>
+    <a href={{profile.URL}}>
+      <i class="fa fa-{{profile.icon}} fa-5" style="font-size: 100px" aria-hidden="true"></i>
+    </a>
   </div>
 </div>

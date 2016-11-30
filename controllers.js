@@ -352,18 +352,18 @@ app.controller("ProfileController", function() {
   this.profiles = [
     {
       name: "LinkedIn",
-      URL: "https://www.linkedin.com/in/tyler-frasca-92083bb9?trk=nav_responsive_tab_profile",
-      picture: "pages/pictures/logo-linkedin.svg"
+      URL: "https://www.linkedin.com/in/tyler-frasca-92083bb9",
+      icon: "linkedin"
     },
     {
       name: "GitHub",
       URL: "https://github.com/tfrasc",
-      picture: "pages/pictures/github.png"
+      icon: "github"
     },
     {
       name: "Stack Overflow",
       URL: "http://stackoverflow.com/users/5561398/tfrasc",
-      picture: "pages/pictures/icon-stackoverflow.svg"
+      icon: "stack-overflow"
     }
   ]
 });
