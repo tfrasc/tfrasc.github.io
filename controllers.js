@@ -33,6 +33,19 @@ app.controller("TabController", function() {
   this.isSet = function(tabIndex){
     return this.currentTab === tabIndex;
   };
+
+  if(window.location.href.indexOf('resume') > 0) {
+    this.currentTab = 1;
+  }
+  else if(window.location.href.indexOf('skills') > 0) {
+    this.currentTab = 2;
+  }
+  else if(window.location.href.indexOf('projects') > 0) {
+    this.currentTab = 3;
+  }
+  else if(window.location.href.indexOf('profiles') > 0) {
+    this.currentTab = 4;
+  }
 });
 
 
@@ -220,11 +233,28 @@ app.controller("ProjectsController", function() {
     this.projects[$index].isShowing = !this.projects[$index].isShowing;
   };
 
+  var init = function () {
+     // check if there is query in url
+     // and fire search in case its value is not empty
+     var slider = new IdealImageSlider.Slider({
+         selector: '#slider',
+         height: 400, // Required but can be set by CSS
+         interval: 4000
+     });
+     slider.start();
+     console.log("SLIDER");
+     console.log(slider);
+   };
+  // and fire it after definition
+  init();
+
   this.projects = [
     {
       name: "Taylor's Mugs (Website) *Redux",
-      link: "https://taylorsmugs.herokuapp.com/",
-      picture: "pages/pictures/taylorsmugsnew.png",
+      link: "https://taylorsmugs.herokuapp.com/" ,
+      pictures: [ "pages/pictures/taylorsmugsnew.png",
+                //  "pages/pictures/taylorsmugs.png"
+                 ],
       description: "Custom website for local artist who paints and sells coffee mugs",
       goals:  [ "Develop a simple full-scale rails app",
                 "Create a mobile-friendly site",
@@ -243,7 +273,7 @@ app.controller("ProjectsController", function() {
     {
       name: "Reddit Continuous Music Plugin (Google Chrome Extension)",
       link: "https://github.com/tfrasc/RES-Continuous-Music-Extension",
-      // picture: "pages/pictures/taylorsmugs1.PNG",
+      // pictures: [ "pages/pictures/taylorsmugs1.PNG" ],
       description: "Google Chrome Extension for Reddit to continuously play music on music subreddits",
       goals:  [ "Create a better user experience for a popular website",
                 "Dabble in browser extension programming",
@@ -259,7 +289,7 @@ app.controller("ProjectsController", function() {
     {
       name: "googlePlacesParser (Open Source Javascript Project)",
       link: "https://github.com/tfrasc/googlePlacesParser",
-      // picture: "pages/pictures/taylorsmugs1.PNG",
+      // pictures: [ "pages/pictures/taylorsmugs1.PNG" ],
       description: "Simple script to grab Google Places results from input box and parse the results into a simpler format to grab each component (e.g. street, country, etc.)",
       goals:  [ "Create an open source project for the community to use and contribute to",
                 "Create a simple solution to a software problem that wasn't previous solved"
@@ -273,7 +303,7 @@ app.controller("ProjectsController", function() {
     },
     {
       name: "Portfolio Website ($(this))",
-      //picture: "pages/pictures/portfolio.PNG",
+      //pictures: [ "pages/pictures/portfolio.PNG" ],
       description: "Website to display my projects and skills",
       goals:  [ "Develop a website using newer frameworks and libraries (AngularJS and Bootstrap)",
                 "Consolidate Projects and Skills I've done",
@@ -282,7 +312,6 @@ app.controller("ProjectsController", function() {
       todos:  [ "Link languages in Skills to filtered Projects",
                 "Add carousel to display multiple Projects pictures",
                 "Add Experience column to Skills",
-                "Fix bug for highlighted tab defaulting home on page refresh",
                 "Add future Skills/Projects"
               ],
       languages: ["HTML/CSS", "Bootstrap", "Javascript", "AngularJS"],
@@ -291,7 +320,7 @@ app.controller("ProjectsController", function() {
     {
       name: "Taylor's Mugs (Website) *Legacy",
       link: "https://taylorsmugs.github.io/",
-      picture: "pages/pictures/taylorsmugs.png",
+      pictures: [ "pages/pictures/taylorsmugs.png" ],
       description: "Custom website for local artist who paints and sells coffee mugs",
       goals:  [ "Develop a website from scratch without CSS libraries",
                 "Experiment with jQuery and AJAX",
@@ -308,7 +337,7 @@ app.controller("ProjectsController", function() {
     },
     {
       name: "Drain (Unity Game)",
-      picture: "pages/pictures/Drain.PNG",
+      pictures: [ "pages/pictures/Drain.PNG" ],
       description: "Small top-down puzzle game with goal of getting marble down the drain",
       goals:  [ "Get exposure to a popular game engine (Unity)",
                 "Venture into game development with C#",
@@ -321,7 +350,7 @@ app.controller("ProjectsController", function() {
     {
       name: "1080 App (C# WPF Application)",
       link: "https://github.com/tfrasc/1080App",
-      picture: "pages/pictures/1080app.PNG",
+      pictures: [ "pages/pictures/1080app.PNG" ],
       description: "App to show off beta items of 1080 Avalanche Gamecube game",
       goals:  [ "Develop an application with C# and WPF",
                 "Venture outside of Linux development",
