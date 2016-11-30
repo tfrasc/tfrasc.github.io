@@ -233,21 +233,6 @@ app.controller("ProjectsController", function() {
     this.projects[$index].isShowing = !this.projects[$index].isShowing;
   };
 
-  var init = function () {
-     // check if there is query in url
-     // and fire search in case its value is not empty
-     var slider = new IdealImageSlider.Slider({
-         selector: '#slider',
-         height: 400, // Required but can be set by CSS
-         interval: 4000
-     });
-     slider.start();
-     console.log("SLIDER");
-     console.log(slider);
-   };
-  // and fire it after definition
-  init();
-
   this.projects = [
     {
       name: "Taylor's Mugs (Website) *Redux",
