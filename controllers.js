@@ -34,6 +34,7 @@ app.controller("TabController", function() {
     return this.currentTab === tabIndex;
   };
 
+  //fix bug for highlighting correct tab after reloading
   if(window.location.href.indexOf('resume') > 0) {
     this.currentTab = 1;
   }
@@ -245,12 +246,13 @@ app.controller("ProjectsController", function() {
                 "Create a mobile-friendly site",
                 "Gain experience with automation and deployments via Heroku"
               ],
-      todos:  [ "Implement online payment (WePay API)",
+      todos:  [ "Implement online payment (w/ Stripe)",
                 "Fix HTML5 image dropper with mug/wine/shot glass template",
                 "Implement emails to notify admin and user of order",
                 "Create admin view to track payments and deliveries",
                 "Add option for wine and shot glasses",
-                "Add fun/fancy ui (order counter, etc.)"
+                "Add fun/fancy ui (order counter, etc.)",
+                "Fix production image upload by using AWS S3 bucket"
               ],
       languages: ["Ruby", "Ruby on Rails", "HTML5/CSS3", "Javascript", "jQuery", "PostgreSQL"],
       isShowing: false
@@ -287,7 +289,7 @@ app.controller("ProjectsController", function() {
       isShowing: false
     },
     {
-      name: "Portfolio Website ($(this))",
+      name: "Portfolio Website (this)",
       //pictures: [ "pages/pictures/portfolio.PNG" ],
       description: "Website to display my projects and skills",
       goals:  [ "Develop a website using newer frameworks and libraries (AngularJS and Bootstrap)",
