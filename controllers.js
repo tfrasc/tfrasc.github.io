@@ -78,7 +78,7 @@ app.controller("SkillsController", function() {
         },
         {
           name: "OpenGL",
-          skillLevel: "Beginner"
+          skillLevel: "Intermediate"
         },
         {
           name: "STL",
@@ -95,15 +95,19 @@ app.controller("SkillsController", function() {
           skillLevel: "Advanced"
         },
         {
-          name: "Node.js",
-          skillLevel: "Beginner"
-        },
-        {
           name: "AngularJS",
           skillLevel: "Beginner"
         },
         {
           name: "ReactJS",
+          skillLevel: "Intermediate"
+        },
+        {
+          name: "React-Native",
+          skillLevel: "Intermediate"
+        },
+        {
+          name: "Node.js",
           skillLevel: "Beginner"
         }
       ]
@@ -181,6 +185,10 @@ app.controller("SkillsController", function() {
 
   this.software = [
   {
+    name: "OSX Development",
+    skillLevel: "Intermediate"
+  },
+  {
     name: "Linux Development/Pentesting",
     skillLevel: "Intermediate",
     libraries: [
@@ -195,15 +203,29 @@ app.controller("SkillsController", function() {
     ]
   },
   {
-    name: "OSX Development",
+    name: "iOS Development",
+    skillLevel: "Intermediate",
+    libraries: [
+      {
+        name: "React-Native",
+        skillLevel: "Intermediate"
+      }
+    ]
+  },
+  {
+    name: "API Development",
     skillLevel: "Intermediate"
   },
   {
-    name: "Agile Development",
+    name: "3rd-Party API Integrations",
     skillLevel: "Intermediate"
   },
   {
     name: "MVC Architecture",
+    skillLevel: "Intermediate"
+  },
+  {
+    name: "Agile Development",
     skillLevel: "Intermediate"
   },
   {
@@ -246,29 +268,29 @@ app.controller("ProjectsController", function() {
                 "Create a mobile-friendly site",
                 "Gain experience with automation and deployments via Heroku"
               ],
-      todos:  [ "Implement online payment (w/ Stripe)",
+      todos:  [ "Implement online payment (Stripe)",
+      "Fix production image upload by using AWS S3 bucket",
                 "Fix HTML5 image dropper with mug/wine/shot glass template",
                 "Implement emails to notify admin and user of order",
                 "Create admin view to track payments and deliveries",
                 "Add option for wine and shot glasses",
-                "Add fun/fancy ui (order counter, etc.)",
-                "Fix production image upload by using AWS S3 bucket"
+                "Add fun/fancy ui (order counter, etc.)"
               ],
       languages: ["Ruby", "Ruby on Rails", "HTML5/CSS3", "Javascript", "jQuery", "PostgreSQL"],
       isShowing: false
     },
     {
-      name: "Reddit Continuous Music Plugin (Google Chrome Extension)",
-      link: "https://github.com/tfrasc/RES-Continuous-Music-Extension",
+      name: "Radio Reddit (Google Chrome Extension)",
+      link: "https://github.com/tfrasc/Radio-Reddit-Chrome-Extension",
       // pictures: [ "pages/pictures/taylorsmugs1.PNG" ],
       description: "Google Chrome Extension for Reddit to continuously play music on music subreddits",
       goals:  [ "Create a better user experience for a popular website",
                 "Dabble in browser extension programming",
                 "Create a simple solution to a software problem that wasn't previous solved"
               ],
-      todos:  [ "Integrate Youtube, Bandcamp, Mixcloud and other API's for plugin",
-                "Submit to Chrome Extension Store after YouTube API implementation",
-                "Integrate Play/Pause commands from popup attached to button"
+      todos:  [ "Submit to Chrome Web Store",
+                "Add styling to popup and make a logo",
+                "Integrate Youtube, Bandcamp, Mixcloud and other API's for plugin"
               ],
       languages: ["Javascript", "jQuery"],
       isShowing: false
