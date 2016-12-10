@@ -132,7 +132,7 @@ app.controller("SkillsController", function() {
       ]
     },
     {
-      name: "SQL/noSQL",
+      name: "SQL",
       skillLevel: "Intermediate",
       libraries: [
         {
@@ -140,14 +140,15 @@ app.controller("SkillsController", function() {
           skillLevel: "Intermediate"
         },
         {
-          name: "MongoDB",
-          skillLevel: "Beginner"
-        },
-        {
           name: "MSSQL",
           skillLevel: "Beginner"
         }
       ]
+    },
+    {
+      name: "noSQL",
+      skillLevel: "Beginner",
+      libraries: [ { name: "MongoDB", skillLevel: "Beginner" } ]
     },
     {
       name: "PHP",
@@ -168,11 +169,11 @@ app.controller("SkillsController", function() {
       libraries: [
         {
           name: "Swing",
-          skillLevel: "Intermediate"
+          skillLevel: "Beginner"
         },
         {
           name: "AWT",
-          skillLevel: "Intermediate"
+          skillLevel: "Beginner"
         }
       ]
     },
@@ -189,16 +190,12 @@ app.controller("SkillsController", function() {
     skillLevel: "Intermediate"
   },
   {
-    name: "Linux Development/Pentesting",
+    name: "Linux Development",
     skillLevel: "Intermediate",
     libraries: [
       {
         name: "Ubuntu",
         skillLevel: "Intermediate"
-      },
-      {
-        name: "Backtrack/Kali",
-        skillLevel: "Beginner"
       }
     ]
   },
@@ -207,7 +204,26 @@ app.controller("SkillsController", function() {
     skillLevel: "Intermediate",
     libraries: [
       {
+        name: "Ionic",
+        skillLevel: "Beginner"
+      },
+      {
         name: "React-Native",
+        skillLevel: "Intermediate"
+      }
+    ]
+  },
+  {
+    name: "Android Development",
+    skillLevel: "Beginner",
+    libraries: [ { name: "React-Native", skillLevel: "Intermediate" } ]
+  },
+  {
+    name: "Windows Development",
+    skillLevel: "Intermediate",
+    libraries: [
+      {
+        name: "Visual Studio",
         skillLevel: "Intermediate"
       }
     ]
@@ -241,14 +257,22 @@ app.controller("SkillsController", function() {
     skillLevel: "Beginner"
   },
   {
-    name: "Visual Studio",
-    skillLevel: "Intermediate"
-  },
-  {
     name: "Unity Game Engine",
     skillLevel: "Beginner"
   }
   ];
+
+  // this.interests = [
+  //   {
+  //     name: "Pentesting/Hacking",
+  //     skillLevel: "Beginner",
+  //     libraries: [ { name: "Kali/Backtrack Linux", skillLevel: "Beginner" } ]
+  //   },
+  //   {
+  //     name: "Modding",
+  //     skillLevel: "Intermediate"
+  //   }
+  // ]
 });
 
 app.controller("ProjectsController", function() {
