@@ -293,7 +293,7 @@ app.controller("ProjectsController", function() {
                 "Gain experience with automation and deployments via Heroku"
               ],
       todos:  [ "Implement online payment (Stripe)",
-      "Fix production image upload by using AWS S3 bucket",
+                "Fix production image upload by using AWS S3 bucket",
                 "Fix HTML5 image dropper with mug/wine/shot glass template",
                 "Implement emails to notify admin and user of order",
                 "Create admin view to track payments and deliveries",
@@ -306,15 +306,15 @@ app.controller("ProjectsController", function() {
     {
       name: "Radio Reddit (Google Chrome Extension)",
       link: "https://github.com/tfrasc/Radio-Reddit-Chrome-Extension",
-      // pictures: [ "pages/pictures/taylorsmugs1.PNG" ],
+      pictures: [ "pages/pictures/RadioReddit.png" ],
       description: "Google Chrome Extension for Reddit to continuously play music on music subreddits",
       goals:  [ "Create a better user experience for a popular website",
                 "Dabble in browser extension programming",
                 "Create a simple solution to a software problem that wasn't previous solved"
               ],
-      todos:  [ "Submit to Chrome Web Store",
-                "Add styling to popup and make a logo",
-                "Integrate Youtube, Bandcamp, Mixcloud and other API's for plugin"
+      todos:  [ "Integrate Youtube, Bandcamp, Mixcloud and other API's for plugin",
+                "Add better styling and get new icon",
+                "Add more functionality (such as opening song in new tab)"
               ],
       languages: ["Javascript", "jQuery"],
       isShowing: false
