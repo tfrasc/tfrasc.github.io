@@ -290,12 +290,12 @@ app.controller("ProjectsController", function() {
       description: "Custom website for local artist who paints and sells coffee mugs",
       goals:  [ "Develop a simple full-scale rails app",
                 "Create a mobile-friendly site",
-                "Gain experience with automation and deployments via Heroku"
+                "Gain experience with automation and deployments via Heroku",
+                "Use AWS S3 Storage (Production image storage)"
               ],
       todos:  [ "Implement online payment (Stripe)",
-                "Fix production image upload by using AWS S3 bucket",
                 "Fix HTML5 image dropper with mug/wine/shot glass template",
-                "Implement emails to notify admin and user of order",
+                "Implement emails (Rails Mailer) and/or SMS (Twilio) to notify admin and user of order",
                 "Create admin view to track payments and deliveries",
                 "Add option for wine and shot glasses",
                 "Add fun/fancy ui (order counter, etc.)"
