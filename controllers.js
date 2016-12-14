@@ -283,7 +283,9 @@ app.controller("ProjectsController", function() {
   this.projects = [
     {
       name: "Taylor's Mugs (Website) *Redux",
-      link: "https://taylorsmugs.herokuapp.com/" ,
+      links: [ "https://taylorsmugs.herokuapp.com/",
+               "https://github.com/tfrasc/taylorsmugs"
+             ],
       pictures: [ "pages/pictures/taylorsmugsnew.png",
                 //  "pages/pictures/taylorsmugs.png"
                  ],
@@ -305,7 +307,9 @@ app.controller("ProjectsController", function() {
     },
     {
       name: "Radio Reddit (Google Chrome Extension)",
-      link: "https://github.com/tfrasc/Radio-Reddit-Chrome-Extension",
+      links: [ "https://chrome.google.com/webstore/detail/radio-reddit/obekklljliecihelobpanjffdpfagjlj",
+               "https://github.com/tfrasc/Radio-Reddit-Chrome-Extension"
+             ],
       pictures: [ "pages/pictures/RadioReddit.png" ],
       description: "Google Chrome Extension for Reddit to continuously play music on music subreddits",
       goals:  [ "Create a better user experience for a popular website",
@@ -321,7 +325,7 @@ app.controller("ProjectsController", function() {
     },
     {
       name: "googlePlacesParser (Open Source Javascript Project)",
-      link: "https://github.com/tfrasc/googlePlacesParser",
+      links: [ "https://github.com/tfrasc/googlePlacesParser" ],
       // pictures: [ "pages/pictures/taylorsmugs1.PNG" ],
       description: "Simple script to grab Google Places results from input box and parse the results into a simpler format to grab each component (e.g. street, country, etc.)",
       goals:  [ "Create an open source project for the community to use and contribute to",
@@ -352,7 +356,9 @@ app.controller("ProjectsController", function() {
     },
     {
       name: "Taylor's Mugs (Website) *Legacy",
-      link: "https://taylorsmugs.github.io/",
+      links: [ "https://taylorsmugs.github.io/",
+               "https://github.com/taylorsmugs/taylorsmugs.github.io"
+             ],
       pictures: [ "pages/pictures/taylorsmugs.png" ],
       description: "Custom website for local artist who paints and sells coffee mugs",
       goals:  [ "Develop a website from scratch without CSS libraries",
@@ -382,7 +388,7 @@ app.controller("ProjectsController", function() {
     },
     {
       name: "1080 App (C# WPF Application)",
-      link: "https://github.com/tfrasc/1080App",
+      links: [ "https://github.com/tfrasc/1080App" ],
       pictures: [ "pages/pictures/1080app.PNG" ],
       description: "App to show off beta items of 1080 Avalanche Gamecube game",
       goals:  [ "Develop an application with C# and WPF",
