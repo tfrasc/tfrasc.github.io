@@ -300,6 +300,7 @@ app.controller("ProjectsController", function() {
                 "Implement emails (Rails Mailer) and/or SMS (Twilio) to notify admin and user of order",
                 "Create admin view to track payments and deliveries",
                 "Add option for wine and shot glasses",
+                "Add favicon",
                 "Add fun/fancy ui (order counter, etc.)"
               ],
       languages: ["Ruby", "Ruby on Rails", "HTML5/CSS3", "Javascript", "jQuery", "PostgreSQL"],
