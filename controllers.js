@@ -348,8 +348,8 @@ app.controller("ProjectsController", function() {
                 "Map out future Projects and Skills I will work on"
               ],
       todos:  [ "Link languages in Skills to filtered Projects",
-                "Add carousel to display multiple Projects pictures",
-                "Add Experience column to Skills",
+                "Add carousel to display multiple pictures for Projects",
+                "Consider adding Interests section",
                 "Add future Skills/Projects"
               ],
       languages: ["HTML/CSS", "Bootstrap", "Javascript", "AngularJS"],
