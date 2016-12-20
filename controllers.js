@@ -69,24 +69,6 @@ app.controller("SkillsController", function() {
 
   this.languages = [
     {
-      name: "C/C++",
-      skillLevel: "Advanced",
-      libraries: [
-        {
-          name: "SDL",
-          skillLevel: "Intermediate"
-        },
-        {
-          name: "OpenGL",
-          skillLevel: "Intermediate"
-        },
-        {
-          name: "STL",
-          skillLevel: "Intermediate"
-        }
-      ]
-    },
-    {
       name: "Javascript",
       skillLevel: "Advanced",
       libraries: [
@@ -127,6 +109,24 @@ app.controller("SkillsController", function() {
         },
         {
           name: "SASS",
+          skillLevel: "Intermediate"
+        }
+      ]
+    },
+    {
+      name: "C/C++",
+      skillLevel: "Advanced",
+      libraries: [
+        {
+          name: "SDL",
+          skillLevel: "Intermediate"
+        },
+        {
+          name: "OpenGL",
+          skillLevel: "Intermediate"
+        },
+        {
+          name: "STL",
           skillLevel: "Intermediate"
         }
       ]
@@ -293,14 +293,14 @@ app.controller("ProjectsController", function() {
       goals:  [ "Develop a simple full-scale rails app",
                 "Create a mobile-friendly site",
                 "Gain experience with automation and deployments via Heroku",
+                "Implement an online payment system (Stripe)",
                 "Use AWS S3 Storage (Production image storage)"
               ],
-      todos:  [ "Implement online payment (Stripe)",
-                "Fix HTML5 image dropper with mug/wine/shot glass template",
+      todos:  [ "Fix HTML5 image dropper with mug/wine/shot glass template",
                 "Implement emails (Rails Mailer) and/or SMS (Twilio) to notify admin and user of order",
                 "Create admin view to track payments and deliveries",
                 "Add option for wine and shot glasses",
-                "Add favicon",
+                "Better favicon",
                 "Add fun/fancy ui (order counter, etc.)"
               ],
       languages: ["Ruby", "Ruby on Rails", "HTML5/CSS3", "Javascript", "jQuery", "PostgreSQL"],
@@ -315,7 +315,7 @@ app.controller("ProjectsController", function() {
       description: "Google Chrome Extension for Reddit to continuously play music on music subreddits",
       goals:  [ "Create a better user experience for a popular website",
                 "Dabble in browser extension programming",
-                "Create a simple solution to a software problem that wasn't previous solved"
+                "Create a product for others to use and enjoy"
               ],
       todos:  [ "Integrate Youtube, Bandcamp, Mixcloud and other API's for plugin",
                 "Add better styling and get new icon",
@@ -330,7 +330,7 @@ app.controller("ProjectsController", function() {
       // pictures: [ "pages/pictures/taylorsmugs1.PNG" ],
       description: "Simple script to grab Google Places results from input box and parse the results into a simpler format to grab each component (e.g. street, country, etc.)",
       goals:  [ "Create an open source project for the community to use and contribute to",
-                "Create a simple solution to a software problem that wasn't previous solved"
+                "Create a simple solution to a software problem that wasn't previously solved"
               ],
       todos:  [ "Figure out how to fire the display on the first click of button (might be a timing delay getting the results back from the Google API)",
                 "Fix phone number and vicinity (if possible)",
