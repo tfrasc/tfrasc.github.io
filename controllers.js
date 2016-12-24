@@ -290,17 +290,19 @@ app.controller("ProjectsController", function() {
                 //  "pages/pictures/taylorsmugs.png"
                  ],
       description: "Custom website for local artist who paints and sells coffee mugs",
-      goals:  [ "Develop a simple full-scale rails app",
+      goals:  [ "Develop a simple but full-scale rails app",
                 "Create a mobile-friendly site",
                 "Gain experience with automation and deployments via Heroku",
                 "Implement an online payment system (Stripe)",
-                "Use AWS S3 Storage (Production image storage)"
+                "Use AWS S3 Storage (Production image storage)",
+                "Create Admin view to track payments and deliveries (eCommerce functionality)",
               ],
       todos:  [ "Fix HTML5 image dropper with mug/wine/shot glass template",
                 "Implement emails (Rails Mailer) and/or SMS (Twilio) to notify admin and user of order",
-                "Create admin view to track payments and deliveries",
                 "Add option for wine and shot glasses",
-                "Better favicon",
+                "Add password protection to Admin view",
+                "Add button in Admin view to easily change featured mugs",
+                "Make a better favicon",
                 "Add fun/fancy ui (order counter, etc.)"
               ],
       languages: ["Ruby", "Ruby on Rails", "HTML5/CSS3", "Javascript", "jQuery", "PostgreSQL"],
