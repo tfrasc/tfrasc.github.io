@@ -290,7 +290,7 @@ app.controller("ProjectsController", function() {
                 //  "pages/pictures/taylorsmugs.png"
                  ],
       description: "Custom website for local artist who paints and sells coffee mugs",
-      goals:  [ "Develop a simple but full-scale rails app",
+      goals:  [ "Develop a simple, full-scale Rails app",
                 "Create a mobile-friendly site",
                 "Gain experience with automation and deployments via Heroku",
                 "Implement an online payment system (Stripe)",
@@ -301,7 +301,6 @@ app.controller("ProjectsController", function() {
                 "Implement emails (Rails Mailer) and/or SMS (Twilio) to notify admin and user of order",
                 "Add option for wine and shot glasses",
                 "Add password protection to Admin view",
-                "Add button in Admin view to easily change featured mugs",
                 "Make a better favicon",
                 "Add fun/fancy ui (order counter, etc.)"
               ],
@@ -347,7 +346,8 @@ app.controller("ProjectsController", function() {
       description: "Website to display my projects and skills",
       goals:  [ "Develop a website using newer frameworks and libraries (AngularJS and Bootstrap)",
                 "Consolidate Projects and Skills I've done",
-                "Map out future Projects and Skills I will work on"
+                "Map out future Projects and Skills I plan to work on",
+                "Create a Single Page Application"
               ],
       todos:  [ "Link languages in Skills to filtered Projects",
                 "Add carousel to display multiple pictures for Projects",
