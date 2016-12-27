@@ -300,7 +300,6 @@ app.controller("ProjectsController", function() {
       todos:  [ "Fix HTML5 image dropper with mug/wine/shot glass template",
                 "Implement emails (Rails Mailer) and/or SMS (Twilio) to notify admin and user of order",
                 "Add option for wine and shot glasses",
-                "Add password protection to Admin view",
                 "Make a better favicon",
                 "Add fun/fancy ui (order counter, etc.)"
               ],
