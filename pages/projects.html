@@ -13,7 +13,7 @@
     <h4>{{project.description}}</h4>
   <div ng-show="ProjectCtrl.projects[$index].isShowing">
     <div class="slider">
-      <img ng-repeat="picture in project.pictures" src={{picture}} style="padding-top: 5px; padding-bottom: 5px;">
+      <img ng-repeat="picture in project.pictures" src={{picture}} style="padding-top: 5px; padding-bottom: 5px; {{project.customSyle}}">
     </div>
   <br>
     <h4 style="display: inline-block">Goal(s): </h4>

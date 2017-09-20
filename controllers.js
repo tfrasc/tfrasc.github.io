@@ -282,6 +282,32 @@ app.controller("ProjectsController", function() {
 
   this.projects = [
     {
+      name: "memeO (iOS App)",
+      links: [ "https://tfrasc.github.io/memeO/"
+             ],
+      pictures: [ "pages/pictures/memeO_icon.png",
+                //  "pages/pictures/taylorsmugs.png"
+                 ],
+      description: "memeO is a meme and dating app all in one.",
+      goals:  [ "Develop an entire iOS app from scratch",
+                "Expand knowledge of React-Native and app development",
+                "Gain experience with having an app on the App Store (deployments and updates)",
+                "Design a mobile UI and continue to improve it",
+                "Accept and implement user feedback (Contact functionality automatically creates new Issue on Github)",
+              ],
+      todos:  [ "Further optimize and clean up code",
+                "Build out Android version",
+                "Add App Store rating modal",
+                "Add gif support and keyboard",
+                "Add filtering based on Geolocation",
+                "Get Apple Developer license and deploy to App Store",
+                "More fun features and memes"
+              ],
+      languages: ["Ruby", "Ruby on Rails", "Javascript", "React-Native", "PostgreSQL"],
+      customSyle: "width: 100px;",
+      isShowing: false
+    },
+    {
       name: "Taylor's Mugs (Website) *Redux",
       links: [ "https://taylorsmugs.herokuapp.com/",
                "https://github.com/tfrasc/taylorsmugs"
@@ -327,7 +353,7 @@ app.controller("ProjectsController", function() {
     {
       name: "googlePlacesParser (Open Source Javascript Project)",
       links: [ "https://github.com/tfrasc/googlePlacesParser" ],
-      // pictures: [ "pages/pictures/taylorsmugs1.PNG" ],
+      // pictures: [ "pages/pictures/taylorsmugs1.png" ],
       description: "Simple script to grab Google Places results from input box and parse the results into a simpler format to grab each component (e.g. street, country, etc.)",
       goals:  [ "Create an open source project for the community to use and contribute to",
                 "Create a simple solution to a software problem that wasn't previously solved"
@@ -341,7 +367,7 @@ app.controller("ProjectsController", function() {
     },
     {
       name: "Portfolio Website (this)",
-      //pictures: [ "pages/pictures/portfolio.PNG" ],
+      //pictures: [ "pages/pictures/portfolio.png" ],
       description: "Website to display my projects and skills",
       goals:  [ "Develop a website using newer frameworks and libraries (AngularJS and Bootstrap)",
                 "Consolidate Projects and Skills I've done",
@@ -378,7 +404,7 @@ app.controller("ProjectsController", function() {
     },
     {
       name: "Drain (Unity Game)",
-      pictures: [ "pages/pictures/Drain.PNG" ],
+      pictures: [ "pages/pictures/Drain.png" ],
       description: "Small top-down puzzle game with goal of getting marble down the drain",
       goals:  [ "Get exposure to a popular game engine (Unity)",
                 "Venture into game development with C#",
@@ -391,7 +417,7 @@ app.controller("ProjectsController", function() {
     {
       name: "1080 App (C# WPF Application)",
       links: [ "https://github.com/tfrasc/1080App" ],
-      pictures: [ "pages/pictures/1080app.PNG" ],
+      pictures: [ "pages/pictures/1080app.png" ],
       description: "App to show off beta items of 1080 Avalanche Gamecube game",
       goals:  [ "Develop an application with C# and WPF",
                 "Venture outside of Linux development",
