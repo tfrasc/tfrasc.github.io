@@ -283,7 +283,8 @@ app.controller("ProjectsController", function() {
   this.projects = [
     {
       name: "memeO (iOS App)",
-      links: [ "https://tfrasc.github.io/memeO/"
+      links: [ "https://tfrasc.github.io/memeO/",
+               "https://itunes.apple.com/us/app/memeo/id1287902877?mt=8"
              ],
       pictures: [ "pages/pictures/memeO_icon.png",
                 //  "pages/pictures/taylorsmugs.png"
@@ -300,8 +301,7 @@ app.controller("ProjectsController", function() {
                 "Add App Store rating modal",
                 "Add gif support and keyboard",
                 "Add filtering based on Geolocation",
-                "Get Apple Developer license and deploy to App Store",
-                "More fun features and memes"
+                "Implement more fun features and memes"
               ],
       languages: ["Ruby", "Ruby on Rails", "Javascript", "React-Native", "PostgreSQL"],
       customSyle: "width: 100px;",
