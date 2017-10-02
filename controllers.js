@@ -128,6 +128,10 @@ app.controller("SkillsController", function() {
         {
           name: "STL",
           skillLevel: "Intermediate"
+        },
+        {
+          name: "MPI",
+          skillLevel: "Beginner"
         }
       ]
     },
@@ -295,12 +299,12 @@ app.controller("ProjectsController", function() {
                 "Gain experience with having an app on the App Store (deployments and updates)",
                 "Design a mobile UI and continue to improve it",
                 "Integrate Twilio (SMS), Slack (Admin Notifications), Giphy (Gif keyboard), and Github (Contact functionality automatically creates new Issue)",
+                "Implement Push Notifications through Apple's APN",
                 "Accept and implement user feedback",
               ],
       todos:  [ "Further optimize and clean up code",
                 "Build out Android version",
                 "Add App Store rating modal",
-                "Add gif support and keyboard",
                 "Add filtering based on Geolocation",
                 "Implement more fun features and memes"
               ],
