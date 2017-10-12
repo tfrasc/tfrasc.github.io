@@ -81,7 +81,7 @@ app.controller("SkillsController", function() {
           skillLevel: "Beginner"
         },
         {
-          name: "ReactJS",
+          name: "React",
           skillLevel: "Intermediate"
         },
         {
@@ -254,7 +254,7 @@ app.controller("SkillsController", function() {
   },
   {
     name: "Heroku",
-    skillLevel: "Beginner"
+    skillLevel: "Intermediate"
   },
   {
     name: "LAMP Stack",
@@ -299,7 +299,7 @@ app.controller("ProjectsController", function() {
                 "Gain experience with having an app on the App Store (deployments and updates)",
                 "Design a mobile UI and continue to improve it",
                 "Integrate Twilio (SMS), Slack (Admin Notifications), Giphy (Gif keyboard), and Github (Contact functionality automatically creates new Issue)",
-                "Implement Push Notifications through Apple's APN",
+                "Implement Push Notifications through Apple's APNs",
                 "Accept and implement user feedback",
               ],
       todos:  [ "Further optimize and clean up code",
@@ -401,7 +401,7 @@ app.controller("ProjectsController", function() {
               ],
       todos:  [ "Implement Twitter API",
                 "Add comment capability",
-                "Migrate to ReactJS (or another hip JS framework)",
+                "Migrate to React (or another hip JS framework)",
                 "Add shopping cart w/ Customizable mug template"
               ],
       languages: ["HTML/CSS", "Javascript", "jQuery"],
