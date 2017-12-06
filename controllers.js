@@ -152,7 +152,16 @@ app.controller("SkillsController", function() {
     {
       name: "noSQL",
       skillLevel: "Beginner",
-      libraries: [ { name: "MongoDB", skillLevel: "Beginner" } ]
+      libraries: [
+        {
+          name: "MongoDB",
+          skillLevel: "Beginner"
+        },
+        {
+          name: "Firebase",
+          skillLevel: "Beginner"
+        }
+      ]
     },
     {
       name: "PHP",
@@ -208,7 +217,7 @@ app.controller("SkillsController", function() {
     skillLevel: "Intermediate",
     libraries: [
       {
-        name: "Ionic",
+        name: "Ionic 2",
         skillLevel: "Beginner"
       },
       {
@@ -220,7 +229,17 @@ app.controller("SkillsController", function() {
   {
     name: "Android Development",
     skillLevel: "Beginner",
-    libraries: [ { name: "React-Native", skillLevel: "Intermediate" } ]
+    skillLevel: "Intermediate",
+    libraries: [
+      {
+        name: "Ionic 2",
+        skillLevel: "Beginner"
+      },
+      {
+        name: "React-Native",
+        skillLevel: "Intermediate"
+      }
+    ]
   },
   {
     name: "Windows Development",
