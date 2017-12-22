@@ -375,6 +375,23 @@ app.controller("ProjectsController", function() {
       isShowing: false
     },
     {
+      name: "Coinranking Plus (Google Chrome Extension)",
+      links: [ "https://chrome.google.com/webstore/detail/coinranking-plus/igebmifjpedhgcdpgikmccblmnnpkokk",
+               "https://github.com/tfrasc/Coinranking-Plus"
+             ],
+      pictures: [ "pages/pictures/CoinrankingPlus.png" ],
+      description: "Google Chrome Extension for Coinranking that adds favorites functionality",
+      goals:  [ "Create a more convenient and streamlined experience for users",
+                "Dabble in browser extension programming and persistant storage",
+                "Create a product for others to use and enjoy"
+              ],
+      todos:  [ "Integrate a search functionality leading to a search on the Coinranking site",
+                "Allow removing and reorganizing favorites in popup"
+              ],
+      languages: ["Javascript", "jQuery"],
+      isShowing: false
+    },
+    {
       name: "googlePlacesParser (Open Source Javascript Project)",
       links: [ "https://github.com/tfrasc/googlePlacesParser" ],
       // pictures: [ "pages/pictures/taylorsmugs1.png" ],
