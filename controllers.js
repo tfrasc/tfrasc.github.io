@@ -382,8 +382,8 @@ app.controller("ProjectsController", function() {
       pictures: [ "pages/pictures/CoinrankingPlus.png" ],
       description: "Google Chrome Extension for Coinranking that adds favorites functionality",
       goals:  [ "Create a more convenient and streamlined experience for users",
-                "Dabble in browser extension programming and persistant storage",
-                "Create a product for others to use and enjoy"
+                "Continue in browser extension programming and learn about persistant storage",
+                "Create a product for a booming market for people to leverage"
               ],
       todos:  [ "Integrate a search functionality leading to a search on the Coinranking site",
                 "Allow removing and reorganizing favorites in popup"
