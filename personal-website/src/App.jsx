@@ -37,31 +37,31 @@ export default function Portfolio() {
   // Your actual projects - add more details as needed
   const projects = [
     {
-      title: "Portfolio Project 1",
-      description: "Full-stack web application demonstrating modern web development practices with React and Node.js.",
-      tags: ["React", "Node.js", "PostgreSQL", "JavaScript"],
-      link: "https://github.com/tylerfrasca",
+      title: "memeO (iOS App)",
+      description: "memeO is a meme and dating app all in one.",
+      tags: ["React-Native", "Ruby on Rails", "PostgreSQL"],
+      link: "https://github.com/tfrasc/memeO/",
       demo: null
     },
     {
-      title: "Mobile Application",
-      description: "Cross-platform mobile application built with React Native for iOS and Android platforms.",
-      tags: ["React Native", "Firebase", "JavaScript"],
-      link: "https://github.com/tylerfrasca",
+      title: "Taylor's Mugs",
+      description: "Custom website for local artist who paints and sells coffee mugs",
+      tags: ["Ruby on Rails", "Javascript", "PostgreSQL"],
+      link: "https://github.com/tfrasc/taylorsmugs",
       demo: null
     },
     {
-      title: "Web Platform",
-      description: "Contributions to full-scale, mobile-friendly web platform with API integrations.",
-      tags: ["Rails", "HTML5", "CSS3", "SASS", "Postgres"],
-      link: "https://github.com/tylerfrasca",
+      title: "Radio Reddit (Google Chrome Extension)",
+      description: "Google Chrome Extension for Reddit to continuously play music on music subreddits",
+      tags: ["JavaScript"],
+      link: "https://github.com/tfrasc/Radio-Reddit-Chrome-Extension",
       demo: null
     },
     {
-      title: "Teaching Platform",
-      description: "Educational coding exercises and projects for teaching Full Stack Web Development.",
-      tags: ["React", "AngularJS", "MongoDB", "Node.js"],
-      link: "https://github.com/tylerfrasca",
+      title: "Coinranking Plus (Google Chrome Extension)",
+      description: "Google Chrome Extension for Coinranking that adds favorites functionality",
+      tags: ["Javascript"],
+      link: "https://github.com/tfrasc/Coinranking-Plus",
       demo: null
     }
   ];
@@ -72,42 +72,35 @@ export default function Portfolio() {
       company: "Square",
       period: "May 2019 - Present",
       description: "Software engineering at Square, working on financial technology solutions and payment systems.",
-      skills: ["Python", "Java", "Microservices", "AWS"]
+      skills: ["Kotlin", "Golang", "PHP", "Ember", "PostgreSQL"]
     },
     {
       title: "Software Engineering Intern",
       company: "Square",
       period: "June 2018 - August 2018",
       description: "Summer internship focused on software development and engineering practices.",
-      skills: ["Java", "Python", "Software Engineering"]
+      skills: ["PHP", "Vue", "MySQL"]
     },
     {
       title: "Web Developer",
       company: "Elevate Blue",
       period: "June 2016 - June 2018",
       description: "Full Stack Web Development using Rails, HTML5 & CSS3, SASS, Node.js, Postgres. Contributions to multiple full-scale, mobile-friendly web platform code bases. API development and third-party API integrations. iOS/Android Development with React-Native. Mentor and work alongside other developers and interns.",
-      skills: ["Rails", "React Native", "Node.js", "Postgres", "HTML5", "CSS3", "SASS"]
+      skills: ["Ruby on Rails", "Node.js", "React", "AngularJS", "PostgreSQL", "MongoDB"]
     },
     {
       title: "Teaching Assistant",
       company: "Code Tahoe",
       period: "June 2016 - Present",
       description: "Help teach and guide students in Full Stack Web Development. Create and facilitate coding exercises, quizzes, and projects.",
-      skills: ["Rails", "Node.js", "React", "AngularJS", "Postgres", "MongoDB"]
+      skills: ["Ruby on Rails", "Node.js", "React", "AngularJS", "PostgreSQL", "MongoDB"]
     },
     {
       title: "Junior Developer",
       company: "PCLender, LLC",
       period: "January 2016 - June 2016",
       description: "Learning, formally documenting, and teaching an in-house programming language. Agile Software Development using Jira. Quality Assurance and billable Professional Services work.",
-      skills: ["Agile", "Jira", "QA", "Documentation"]
-    },
-    {
-      title: "Computer Operator I",
-      company: "Eldorado Resort and Casino",
-      period: "2013 - 2016",
-      description: "Help desk and hands-on troubleshooting across large, integrated computer and slot machine networks. Responsibility of monitoring and maintaining systems on two separate properties. Creation of new documentation as well as updating legacy documentation.",
-      skills: ["Networking", "Troubleshooting", "Systems Administration", "Documentation"]
+      skills: ["Agile", "QA", "Documentation"]
     }
   ];
 
@@ -479,7 +472,7 @@ export default function Portfolio() {
           <button onClick={() => scrollToSection('home')} style={styles.logo}>
             Tyler Frasca
           </button>
-          
+
           <div style={styles.navLinks} className="nav-links">
             {['home', 'projects', 'experience', 'contact'].map((section) => (
               <button
@@ -529,17 +522,20 @@ export default function Portfolio() {
       <section id="home" style={styles.section}>
         <div style={styles.hero}>
           <div style={styles.avatar}>TF</div>
-          <div style={styles.badge}>San Francisco Bay Area</div>
+          <div style={styles.badge}>San Diego, CA</div>
           <h1 style={styles.h1}>Hi, I'm Tyler Frasca</h1>
           <p style={styles.subtitle}>Full-Stack Software Engineer</p>
           <p style={styles.description}>
-            Passionate developer that loves to write code and create awesome products. Strong personal portfolio of web and mobile projects with professional experience at Square and startups. Constantly expanding my skill-set by building projects with new languages and frameworks.
+            With nearly a decade of experience as a full-stack engineer, I have worked at both Big Tech and Startups and can build scalable, reliable, and speedy systems. I love to learn, enjoy a challenge, and care deeply about helping others however I can.
+          </p>
+          <p style={styles.description}>
+            Outside of work, I'm extremely passionate about the great outdoors. I love to climb, snowboard, mountain bike, and surf... and dabble in creating music. 
           </p>
           <div style={styles.socialLinks}>
-            <a href="https://github.com/tylerfrasca" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
+            <a href="https://github.com/tfrasc" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com/in/tylerfrasca" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
+            <a href="https://linkedin.com/in/tfrasc" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
               <Linkedin size={24} />
             </a>
             <a href="mailto:tfrasc@gmail.com" style={styles.socialLink}>
@@ -557,7 +553,7 @@ export default function Portfolio() {
         <div style={{ width: '100%', maxWidth: '1200px' }}>
           <h2 style={styles.sectionTitle}>Featured Projects</h2>
           <p style={styles.sectionSubtitle}>A selection of my work</p>
-          
+
           <div style={styles.projectsGrid}>
             {projects.map((project, index) => (
               <div key={index} style={styles.projectCard}>
@@ -657,20 +653,20 @@ export default function Portfolio() {
           <p style={styles.description}>
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
-          
+
           <div style={styles.contactButtons}>
             <a href="mailto:tfrasc@gmail.com" style={styles.contactButton}>
               <Mail size={20} />
               <span>Send Email</span>
             </a>
-            <a href="https://linkedin.com/in/tylerfrasca" target="_blank" rel="noopener noreferrer" style={{...styles.contactButton, ...styles.contactButtonSecondary}}>
+            <a href="https://linkedin.com/in/tfrasc" target="_blank" rel="noopener noreferrer" style={{...styles.contactButton, ...styles.contactButtonSecondary}}>
               <Linkedin size={20} />
               <span>Connect on LinkedIn</span>
             </a>
           </div>
 
           <div style={styles.footer}>
-            <p>© 2024 Tyler Frasca. Built with React.</p>
+            <p>© 2026 Tyler Frasca. Built with React.</p>
             <p style={{marginTop: '0.5rem'}}>Phone: (775) 813-3468</p>
           </div>
         </div>
