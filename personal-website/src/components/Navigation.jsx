@@ -1,7 +1,7 @@
 import React from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Home, Briefcase, Code, Mail } from 'lucide-react';
 
-const Navigation = ({ activeSection, isMenuOpen, setIsMenuOpen, scrollToSection }) => {
+const Navigation = ({ activeSection, scrollToSection }) => {
   const styles = {
     nav: {
       position: 'fixed',
@@ -30,6 +30,7 @@ const Navigation = ({ activeSection, isMenuOpen, setIsMenuOpen, scrollToSection 
       border: 'none',
       cursor: 'pointer',
     },
+    // Desktop navigation - text links
     navLinks: {
       display: 'flex',
       gap: '2rem',
@@ -49,71 +50,87 @@ const Navigation = ({ activeSection, isMenuOpen, setIsMenuOpen, scrollToSection 
     navLinkActive: {
       color: '#60a5fa',
     },
-    mobileMenuBtn: {
+    // Mobile navigation - icon buttons
+    mobileNavLinks: {
       display: 'none',
+      gap: '0.5rem',
+    },
+    iconButton: {
       background: 'none',
       border: 'none',
       color: '#94a3b8',
       cursor: 'pointer',
+      padding: '0.5rem',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      transition: 'all 0.3s',
+      borderRadius: '0.5rem',
     },
-    mobileMenu: {
-      padding: '1rem 1.5rem',
-      borderTop: '1px solid #334155'
+    iconButtonActive: {
+      color: '#60a5fa',
+      background: 'rgba(96, 165, 250, 0.1)',
     },
   };
 
-  const sections = ['home', 'projects', 'experience', 'contact'];
+  const navItems = [
+    { id: 'home', label: 'home', icon: Home },
+    { id: 'projects', label: 'projects', icon: Code },
+    { id: 'experience', label: 'experience', icon: Briefcase },
+    { id: 'contact', label: 'contact', icon: Mail },
+  ];
 
   return (
     <nav style={styles.nav}>
+      <style>{`
+        @media (max-width: 768px) {
+          .desktop-nav { display: none !important; }
+          .mobile-nav { display: flex !important; }
+          .nav-logo { font-size: 1.25rem !important; }
+        }
+      `}</style>
+      
       <div style={styles.navContent}>
-        <button onClick={() => scrollToSection('home')} style={styles.logo}>
+        <button onClick={() => scrollToSection('home')} style={styles.logo} className="nav-logo">
           Tyler Frasca
         </button>
 
-        <div style={styles.navLinks} className="nav-links">
-          {sections.map((section) => (
+        {/* Desktop Navigation - Text Links */}
+        <div style={styles.navLinks} className="desktop-nav">
+          {navItems.map((item) => (
             <button
-              key={section}
-              onClick={() => scrollToSection(section)}
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
               style={{
                 ...styles.navLink,
-                ...(activeSection === section ? styles.navLinkActive : {})
+                ...(activeSection === item.id ? styles.navLinkActive : {})
               }}
             >
-              {section}
+              {item.label}
             </button>
           ))}
         </div>
 
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          style={styles.mobileMenuBtn}
-          className="mobile-menu-btn"
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile Navigation - Icon Buttons */}
+        <div style={styles.mobileNavLinks} className="mobile-nav">
+          {navItems.map((item) => {
+            const Icon = item.icon;
+            return (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                style={{
+                  ...styles.iconButton,
+                  ...(activeSection === item.id ? styles.iconButtonActive : {})
+                }}
+                title={item.label}
+              >
+                <Icon size={20} />
+              </button>
+            );
+          })}
+        </div>
       </div>
-
-      {isMenuOpen && (
-        <div style={styles.mobileMenu}>
-          {sections.map((section) => (
-            <button
-              key={section}
-              onClick={() => scrollToSection(section)}
-              style={{
-                ...styles.navLink,
-                display: 'block',
-                width: '100%',
-                textAlign: 'left',
-                marginBottom: '0.5rem',
-              }}
-            >
-              {section}
-            </button>
-          ))}
-        </div>
-      )}
     </nav>
   );
 };
