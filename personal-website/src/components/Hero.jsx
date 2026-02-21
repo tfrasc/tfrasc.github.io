@@ -1,0 +1,112 @@
+import React from 'react';
+import { Github, Linkedin, Mail } from 'lucide-react';
+import { styles as sharedStyles } from '../styles/sharedStyles';
+
+const Hero = ({ scrollToSection }) => {
+  const styles = {
+    hero: {
+      textAlign: 'center',
+      maxWidth: '900px',
+      margin: '0 auto',
+    },
+    avatar: {
+      width: '120px',
+      height: '120px',
+      background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%)',
+      borderRadius: '50%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      margin: '0 auto 2rem',
+      fontSize: '2.5rem',
+      fontWeight: 'bold',
+      boxShadow: '0 20px 60px rgba(59, 130, 246, 0.3)',
+      animation: 'pulse 2s infinite',
+    },
+    badge: {
+      display: 'inline-block',
+      padding: '0.5rem 1rem',
+      background: 'rgba(59, 130, 246, 0.1)',
+      border: '1px solid rgba(59, 130, 246, 0.2)',
+      borderRadius: '9999px',
+      fontSize: '0.875rem',
+      color: '#60a5fa',
+      marginBottom: '1.5rem',
+    },
+    h1: {
+      fontSize: '4rem',
+      fontWeight: 'bold',
+      marginBottom: '1.5rem',
+      background: 'linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #f472b6 100%)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+      backgroundClip: 'text',
+      lineHeight: '1.2',
+    },
+    subtitle: {
+      fontSize: '1.5rem',
+      color: '#cbd5e1',
+      marginBottom: '1rem',
+      fontWeight: '300',
+    },
+    description: {
+      fontSize: '1.125rem',
+      color: '#94a3b8',
+      marginBottom: '3rem',
+      lineHeight: '1.8',
+      maxWidth: '700px',
+      margin: '0 auto 2rem',
+    },
+    socialLinks: {
+      display: 'flex',
+      justifyContent: 'center',
+      gap: '1rem',
+      marginBottom: '3rem',
+    },
+    socialLink: {
+      padding: '1rem',
+      background: 'rgba(30, 41, 59, 0.5)',
+      border: '1px solid #334155',
+      borderRadius: '50%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      transition: 'all 0.3s',
+      cursor: 'pointer',
+      textDecoration: 'none',
+    },
+  };
+
+  return (
+    <section id="home" style={sharedStyles.section}>
+      <div style={styles.hero}>
+        <div style={styles.avatar}>TF</div>
+        <div style={styles.badge}>San Diego, CA</div>
+        <h1 style={styles.h1}>Hi, I'm Tyler Frasca</h1>
+        <p style={styles.subtitle}>Full-Stack Software Engineer</p>
+        <p style={styles.description}>
+          With nearly a decade of experience as a full-stack engineer, I have worked at both Big Tech and Startups and can build scalable, reliable, and speedy systems. I love to learn, enjoy a challenge, and care deeply about helping others however I can.
+        </p>
+        <p style={styles.description}>
+          Outside of work, I'm extremely passionate about the great outdoors. I love to climb, snowboard, mountain bike, and surf... and dabble in creating music.
+        </p>
+        <div style={styles.socialLinks}>
+          <a href="https://github.com/tfrasc" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
+            <Github size={24} />
+          </a>
+          <a href="https://linkedin.com/in/tfrasc" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
+            <Linkedin size={24} />
+          </a>
+          <a href="mailto:tfrasc@gmail.com" style={styles.socialLink}>
+            <Mail size={24} />
+          </a>
+        </div>
+        <button onClick={() => scrollToSection('projects')} style={sharedStyles.button}>
+          View My Work
+        </button>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
