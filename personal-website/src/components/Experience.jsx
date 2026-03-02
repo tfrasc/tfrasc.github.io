@@ -9,22 +9,10 @@ const Experience = ({ experience }) => {
       margin: '0 auto',
       width: '100%',
     },
-    experienceHeader: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: '0.75rem',
-      marginBottom: '2rem',
-    },
-    experienceTitle: {
-      fontSize: '2rem',
-      fontWeight: 'bold',
-      color: '#ffffff',
-    },
     experienceList: {
       display: 'flex',
       flexDirection: 'column',
       gap: '1.5rem',
-      marginBottom: '4rem',
     },
     experienceCard: {
       ...sharedStyles.card,
@@ -67,11 +55,11 @@ const Experience = ({ experience }) => {
     <section id="experience" style={sharedStyles.section}>
       <div style={styles.experienceSection}>
         <div>
-          <div style={styles.experienceHeader}>
+          <div style={sharedStyles.sectionHeader}>
             <div style={sharedStyles.iconContainer}>
               <Briefcase color="#60a5fa" size={28} />
             </div>
-            <h3 style={styles.experienceTitle}>Work Experience</h3>
+            <h3 style={sharedStyles.sectionHeading}>Work Experience</h3>
           </div>
           <div style={styles.experienceList}>
             {experience.map((job, index) => (

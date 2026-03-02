@@ -1,10 +1,21 @@
 export const styles = {
   // Common Section Styles
   section: {
-    padding: '4rem 1.5rem',
+    padding: '3rem 1.5rem',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  sectionHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.75rem',
+    marginBottom: '2rem',
+  },
+  sectionHeading: {
+    fontSize: '2rem',
+    fontWeight: 'bold',
+    color: '#ffffff',
   },
   sectionTitle: {
     fontSize: '3rem',

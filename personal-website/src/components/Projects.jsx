@@ -26,8 +26,8 @@ const Projects = ({ projects }) => {
     },
     projectLink: {
       padding: '0.5rem',
-      background: 'rgba(30, 41, 59, 0.5)',
-      border: '1px solid #334155',
+      background: 'rgba(255, 255, 255, 0.06)',
+      border: '1px solid rgba(255, 255, 255, 0.08)',
       borderRadius: '0.5rem',
       color: '#94a3b8',
       transition: 'all 0.3s',
@@ -36,6 +36,12 @@ const Projects = ({ projects }) => {
       alignItems: 'center',
       justifyContent: 'center',
     },
+    projectIcon: {
+      width: '50px',
+      height: '50px',
+      borderRadius: '0.75rem',
+      objectFit: 'cover',
+    },
     tags: {
       display: 'flex',
       flexWrap: 'wrap',
@@ -43,36 +49,24 @@ const Projects = ({ projects }) => {
     },
   };
 
-  const headerStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '0.75rem',
-    marginBottom: '2rem',
-  };
-
-  const titleStyle = {
-    fontSize: '2rem',
-    fontWeight: 'bold',
-    color: '#ffffff',
-  };
-
   return (
     <section id="projects" style={sharedStyles.section}>
       <div style={{ width: '100%', maxWidth: '1200px' }}>
-        <div style={headerStyle}>
+        <div style={sharedStyles.sectionHeader}>
           <div style={sharedStyles.iconContainer}>
             <Code color="#60a5fa" size={28} />
           </div>
-          <h3 style={titleStyle}>Projects</h3>
+          <h3 style={sharedStyles.sectionHeading}>Projects</h3>
         </div>
 
         <div style={styles.projectsGrid}>
           {projects.map((project, index) => (
             <div key={index} style={styles.projectCard}>
               <div style={styles.projectHeader}>
-                <div style={sharedStyles.iconContainer}>
-                  <Code color="#60a5fa" size={28} />
-                </div>
+                {project.icon
+                  ? <img src={project.icon} alt={project.title} style={styles.projectIcon} />
+                  : <div style={sharedStyles.iconContainer}><Code color="#60a5fa" size={28} /></div>
+                }
                 <div style={styles.projectLinks}>
                   {project.link && (
                     <a href={project.link} target="_blank" rel="noopener noreferrer" style={styles.projectLink}>

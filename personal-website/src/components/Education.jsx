@@ -9,22 +9,10 @@ const Education = ({ education }) => {
       margin: '0 auto',
       width: '100%',
     },
-    educationHeader: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: '0.75rem',
-      marginBottom: '2rem',
-    },
-    educationTitle: {
-      fontSize: '2rem',
-      fontWeight: 'bold',
-      color: '#ffffff',
-    },
     educationList: {
       display: 'flex',
       flexDirection: 'column',
       gap: '1.5rem',
-      marginBottom: '4rem',
     },
     educationCard: {
       ...sharedStyles.card,
@@ -67,11 +55,11 @@ const Education = ({ education }) => {
     <section id="education" style={sharedStyles.section}>
       <div style={styles.educationSection}>
         <div>
-          <div style={styles.educationHeader}>
+          <div style={sharedStyles.sectionHeader}>
             <div style={sharedStyles.iconContainerPurple}>
               <GraduationCap color="#a78bfa" size={28} />
             </div>
-            <h3 style={styles.educationTitle}>Education</h3>
+            <h3 style={sharedStyles.sectionHeading}>Education</h3>
           </div>
           <div style={styles.educationList}>
             {education.map((edu, index) => (

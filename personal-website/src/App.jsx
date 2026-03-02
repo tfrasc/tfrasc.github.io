@@ -21,8 +21,8 @@ export default function App() {
   // Track active section on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'projects', 'experience', 'contact'];
-      const scrollPosition = window.scrollY + 100;
+      const sections = ['home', 'experience', 'projects', 'education', 'contact'];
+      const scrollPosition = window.scrollY;
 
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -66,6 +66,7 @@ export default function App() {
         setIsMenuOpen={setIsMenuOpen}
         scrollToSection={scrollToSection}
       />
+
       <Hero scrollToSection={scrollToSection} />
 
       <Experience 

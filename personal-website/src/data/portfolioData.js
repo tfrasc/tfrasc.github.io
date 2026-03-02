@@ -4,7 +4,8 @@ export const projectsData = [
     description: "A meme browser and dating iOS app all in one.",
     tags: ["React-Native", "Ruby on Rails", "PostgreSQL"],
     link: "https://github.com/tfrasc/memeO/",
-    demo: null
+    demo: null,
+    icon: "/memeO_icon.png"
   },
   {
     title: "Cryptomon",
@@ -25,14 +26,16 @@ export const projectsData = [
     description: "Google Chrome Extension for Reddit to continuously play music on music subreddits",
     tags: ["JavaScript"],
     link: "https://github.com/tfrasc/Radio-Reddit-Chrome-Extension",
-    demo: null
+    demo: null,
+    icon: "/radio-reddit.png"
   },
   {
     title: "Coinranking Plus",
     description: "Google Chrome Extension for Coinranking that adds favorites functionality",
     tags: ["Javascript"],
     link: "https://github.com/tfrasc/Coinranking-Plus",
-    demo: null
+    demo: null,
+    icon: "/coinranking-plus.png"
   }
 ];
 

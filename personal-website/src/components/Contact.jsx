@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Linkedin } from 'lucide-react';
+import { Mail, Linkedin, MessageSquare } from 'lucide-react';
 import { styles as sharedStyles } from '../styles/sharedStyles';
 
 const Contact = () => {
@@ -41,13 +41,13 @@ const Contact = () => {
       boxShadow: '0 10px 30px rgba(37, 99, 235, 0.3)',
     },
     contactButtonSecondary: {
-      background: 'rgba(30, 41, 59, 0.5)',
+      background: 'rgba(255, 255, 255, 0.04)',
       border: '2px solid #2563eb',
       color: '#60a5fa',
     },
     footer: {
       paddingTop: '3rem',
-      borderTop: '1px solid #334155',
+      borderTop: '1px solid rgba(255, 255, 255, 0.08)',
       color: '#64748b',
     },
   };
@@ -55,7 +55,12 @@ const Contact = () => {
   return (
     <section id="contact" style={sharedStyles.section}>
       <div style={styles.contactSection}>
-        <h2 style={sharedStyles.sectionTitle}>Let's Work Together</h2>
+        <div style={{ ...sharedStyles.sectionHeader, justifyContent: 'center' }}>
+          <div style={sharedStyles.iconContainer}>
+            <MessageSquare color="#60a5fa" size={28} />
+          </div>
+          <h3 style={sharedStyles.sectionHeading}>Let's Work Together</h3>
+        </div>
         <p style={styles.description}>
           I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
         </p>
@@ -78,7 +83,6 @@ const Contact = () => {
 
         <div style={styles.footer}>
           <p>© 2026 Tyler Frasca. Built with React.</p>
-          <p style={{marginTop: '0.5rem'}}>Phone: (775) 813-3468</p>
         </div>
       </div>
     </section>

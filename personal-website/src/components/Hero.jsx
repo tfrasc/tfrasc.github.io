@@ -72,7 +72,7 @@ const Hero = ({ scrollToSection }) => {
   };
 
   return (
-    <section id="home" style={sharedStyles.section}>
+    <section id="home" style={{ ...sharedStyles.section, paddingTop: '5rem' }}>
       <div style={styles.hero}>
         <div style={styles.avatar}></div>
         <div style={styles.badge}>San Diego, CA</div>
