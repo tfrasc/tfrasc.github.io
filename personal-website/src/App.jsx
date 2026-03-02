@@ -21,7 +21,7 @@ export default function App() {
   // Track active section on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'experience', 'projects', 'education', 'contact'];
+      const sections = ['home', 'experience', 'projects', 'education'];
       const scrollPosition = window.scrollY;
 
       for (const section of sections) {

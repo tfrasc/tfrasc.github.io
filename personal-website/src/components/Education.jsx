@@ -38,8 +38,8 @@ const Education = ({ education }) => {
     },
     period: {
       padding: '0.5rem 0.75rem',
-      background: 'rgba(30, 41, 59, 0.5)',
-      border: '1px solid #334155',
+      background: 'rgba(255, 255, 255, 0.06)',
+      border: '1px solid rgba(255, 255, 255, 0.08)',
       borderRadius: '0.5rem',
       color: '#94a3b8',
       fontSize: '0.875rem',
@@ -56,8 +56,8 @@ const Education = ({ education }) => {
       <div style={styles.educationSection}>
         <div>
           <div style={sharedStyles.sectionHeader}>
-            <div style={sharedStyles.iconContainerPurple}>
-              <GraduationCap color="#a78bfa" size={28} />
+            <div style={sharedStyles.iconContainer}>
+              <GraduationCap color="#60a5fa" size={28} />
             </div>
             <h3 style={sharedStyles.sectionHeading}>Education</h3>
           </div>
@@ -67,7 +67,7 @@ const Education = ({ education }) => {
                 <div style={styles.educationCardHeader}>
                   <div>
                     <h4 style={styles.jobTitle}>{edu.degree}</h4>
-                    <p style={{...styles.company, color: '#a78bfa'}}>{edu.school}</p>
+                    <p style={styles.company}>{edu.school}</p>
                   </div>
                   <span style={styles.period}>{edu.period}</span>
                 </div>

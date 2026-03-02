@@ -54,20 +54,25 @@ const Hero = ({ scrollToSection }) => {
     socialLinks: {
       display: 'flex',
       justifyContent: 'center',
+      flexWrap: 'wrap',
       gap: '1rem',
-      marginBottom: '3rem',
+      marginBottom: '2rem',
     },
     socialLink: {
-      padding: '1rem',
-      background: 'rgba(30, 41, 59, 0.5)',
-      border: '1px solid #334155',
-      borderRadius: '50%',
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'center',
+      gap: '0.75rem',
+      padding: '0.75rem 1.5rem',
+      background: 'linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)',
+      border: 'none',
+      borderRadius: '9999px',
+      color: '#ffffff',
+      fontSize: '0.9rem',
+      fontWeight: '600',
       transition: 'all 0.3s',
       cursor: 'pointer',
       textDecoration: 'none',
+      boxShadow: '0 10px 30px rgba(37, 99, 235, 0.3)',
     },
   };
 
@@ -82,22 +87,22 @@ const Hero = ({ scrollToSection }) => {
           With nearly a decade of experience as a full-stack engineer, I have worked at both Big Tech and Startups and can build scalable, reliable, and speedy systems. I love to learn, enjoy a challenge, and care deeply about helping others however I can.
         </p>
         <p style={styles.description}>
-          Outside of work, I'm extremely passionate about the great outdoors. I love to climb, snowboard, mountain bike, and surf... and dabble in creating music.
+          Outside of work, I'm extremely passionate about the great outdoors. I love to climb, snowboard, mountain bike, surf, and make music.
         </p>
         <div style={styles.socialLinks}>
           <a href="https://github.com/tfrasc" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
-            <Github size={24} />
+            <Github size={18} />
+            <span>GitHub</span>
           </a>
           <a href="https://linkedin.com/in/tfrasc" target="_blank" rel="noopener noreferrer" style={styles.socialLink}>
-            <Linkedin size={24} />
+            <Linkedin size={18} />
+            <span>LinkedIn</span>
           </a>
           <a href="mailto:tfrasc@gmail.com" style={styles.socialLink}>
-            <Mail size={24} />
+            <Mail size={18} />
+            <span>tfrasc@gmail.com</span>
           </a>
         </div>
-        <button onClick={() => scrollToSection('projects')} style={sharedStyles.button}>
-          View My Work
-        </button>
       </div>
     </section>
   );

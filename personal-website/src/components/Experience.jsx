@@ -38,8 +38,8 @@ const Experience = ({ experience }) => {
     },
     period: {
       padding: '0.5rem 0.75rem',
-      background: 'rgba(30, 41, 59, 0.5)',
-      border: '1px solid #334155',
+      background: 'rgba(255, 255, 255, 0.06)',
+      border: '1px solid rgba(255, 255, 255, 0.08)',
       borderRadius: '0.5rem',
       color: '#94a3b8',
       fontSize: '0.875rem',
@@ -74,7 +74,7 @@ const Experience = ({ experience }) => {
                 <p style={sharedStyles.description}>{job.description}</p>
                 <div style={styles.tags}>
                   {job.skills.map((skill, skillIndex) => (
-                    <span key={skillIndex} style={sharedStyles.tagPurple}>{skill}</span>
+                    <span key={skillIndex} style={sharedStyles.tag}>{skill}</span>
                   ))}
                 </div>
               </div>

@@ -43,7 +43,7 @@ export const experienceData = [
   {
     title: "Software Engineer",
     company: "Square",
-    period: "May 2019 - Present",
+    period: "May 2019 - February 2026",
     description: "Software engineering at Square, working on financial technology solutions and payment systems.",
     skills: ["Kotlin", "Golang", "PHP", "Ember", "PostgreSQL"]
   },
@@ -64,7 +64,7 @@ export const experienceData = [
   {
     title: "Teaching Assistant",
     company: "Code Tahoe",
-    period: "June 2016 - Present",
+    period: "June 2016 - June 2018",
     description: "Help teach and guide students in Full Stack Web Development. Create and facilitate coding exercises, quizzes, and projects.",
     skills: ["Ruby on Rails", "Node.js", "React", "AngularJS", "PostgreSQL", "MongoDB"]
   },

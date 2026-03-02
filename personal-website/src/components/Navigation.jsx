@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, X, Home, Briefcase, Code, Mail, GraduationCap } from 'lucide-react';
+import { Home, Briefcase, Code, GraduationCap } from 'lucide-react';
 
 const Navigation = ({ activeSection, scrollToSection }) => {
   const styles = {
@@ -78,7 +78,6 @@ const Navigation = ({ activeSection, scrollToSection }) => {
     { id: 'experience', label: 'experience', icon: Briefcase },
     { id: 'projects', label: 'projects', icon: Code },
     { id: 'education', label: 'education', icon: GraduationCap },
-    { id: 'contact', label: 'contact', icon: Mail },
   ];
 
   return (
