@@ -1,9 +1,16 @@
 export const projectsData = [
   {
-    title: "memeO (iOS App)",
-    description: "memeO is a meme and dating app all in one.",
+    title: "memeO",
+    description: "A meme browser and dating iOS app all in one.",
     tags: ["React-Native", "Ruby on Rails", "PostgreSQL"],
     link: "https://github.com/tfrasc/memeO/",
+    demo: null
+  },
+  {
+    title: "Cryptomon",
+    description: "Create NFT cards on the blockchain and battle",
+    tags: ["Solidity", "React"],
+    link: "https://github.com/tfrasc/cryptomon/",
     demo: null
   },
   {
@@ -14,14 +21,14 @@ export const projectsData = [
     demo: null
   },
   {
-    title: "Radio Reddit (Google Chrome Extension)",
+    title: "Radio Reddit",
     description: "Google Chrome Extension for Reddit to continuously play music on music subreddits",
     tags: ["JavaScript"],
     link: "https://github.com/tfrasc/Radio-Reddit-Chrome-Extension",
     demo: null
   },
   {
-    title: "Coinranking Plus (Google Chrome Extension)",
+    title: "Coinranking Plus",
     description: "Google Chrome Extension for Coinranking that adds favorites functionality",
     tags: ["Javascript"],
     link: "https://github.com/tfrasc/Coinranking-Plus",
@@ -72,6 +79,6 @@ export const educationData = [
     degree: "Bachelor of Science in Computer Science and Engineering",
     school: "University of Nevada, Reno",
     period: "2013 - 2018",
-    description: "Comprehensive computer science education with focus on software engineering and algorithms."
+    description: "Comprehensive computer science education with focus on software engineering and algorithms. Minors in Cyber Security and Mathematics"
   }
 ];

@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
+import Education from './components/Education';
 import Contact from './components/Contact';
 import { projectsData, experienceData, educationData } from './data/portfolioData';
 
@@ -41,7 +42,7 @@ export default function App() {
 
   const containerStyle = {
     minHeight: '100vh',
-    background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
+    background: '#0d0d0d',
     color: '#ffffff',
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
   };
@@ -49,10 +50,6 @@ export default function App() {
   return (
     <div style={containerStyle}>
       <style>{`
-        @keyframes pulse {
-          0%, 100% { transform: scale(1); }
-          50% { transform: scale(1.05); }
-        }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { overflow-x: hidden; }
         a { text-decoration: none; }
@@ -69,13 +66,15 @@ export default function App() {
         setIsMenuOpen={setIsMenuOpen}
         scrollToSection={scrollToSection}
       />
-
       <Hero scrollToSection={scrollToSection} />
-      
-      <Projects projects={projectsData} />
-      
+
       <Experience 
         experience={experienceData} 
+      />
+
+      <Projects projects={projectsData} />
+
+      <Education 
         education={educationData} 
       />
       

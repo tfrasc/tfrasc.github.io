@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, X, Home, Briefcase, Code, Mail } from 'lucide-react';
+import { Menu, X, Home, Briefcase, Code, Mail, GraduationCap } from 'lucide-react';
 
 const Navigation = ({ activeSection, scrollToSection }) => {
   const styles = {
@@ -7,9 +7,9 @@ const Navigation = ({ activeSection, scrollToSection }) => {
       position: 'fixed',
       top: 0,
       width: '100%',
-      backgroundColor: 'rgba(15, 23, 42, 0.9)',
+      backgroundColor: 'rgba(13, 13, 13, 0.92)',
       backdropFilter: 'blur(10px)',
-      borderBottom: '1px solid rgba(51, 65, 85, 0.5)',
+      borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
       zIndex: 1000,
     },
     navContent: {
@@ -75,8 +75,9 @@ const Navigation = ({ activeSection, scrollToSection }) => {
 
   const navItems = [
     { id: 'home', label: 'home', icon: Home },
-    { id: 'projects', label: 'projects', icon: Code },
     { id: 'experience', label: 'experience', icon: Briefcase },
+    { id: 'projects', label: 'projects', icon: Code },
+    { id: 'education', label: 'education', icon: GraduationCap },
     { id: 'contact', label: 'contact', icon: Mail },
   ];
 

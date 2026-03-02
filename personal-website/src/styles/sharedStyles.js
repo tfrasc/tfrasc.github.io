@@ -1,8 +1,7 @@
 export const styles = {
   // Common Section Styles
   section: {
-    minHeight: '100vh',
-    padding: '5rem 1.5rem',
+    padding: '4rem 1.5rem',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -44,9 +43,9 @@ export const styles = {
 
   // Card Styles
   card: {
-    background: 'rgba(30, 41, 59, 0.5)',
+    background: 'rgba(255, 255, 255, 0.04)',
     backdropFilter: 'blur(10px)',
-    border: '1px solid #334155',
+    border: '1px solid rgba(255, 255, 255, 0.08)',
     borderRadius: '1rem',
     padding: '2rem',
     transition: 'all 0.3s',

@@ -1,35 +1,35 @@
 import React from 'react';
-import { Briefcase } from 'lucide-react';
+import { GraduationCap } from 'lucide-react';
 import { styles as sharedStyles } from '../styles/sharedStyles';
 
-const Experience = ({ experience }) => {
+const Education = ({ education }) => {
   const styles = {
-    experienceSection: {
+    educationSection: {
       maxWidth: '1200px',
       margin: '0 auto',
       width: '100%',
     },
-    experienceHeader: {
+    educationHeader: {
       display: 'flex',
       alignItems: 'center',
       gap: '0.75rem',
       marginBottom: '2rem',
     },
-    experienceTitle: {
+    educationTitle: {
       fontSize: '2rem',
       fontWeight: 'bold',
       color: '#ffffff',
     },
-    experienceList: {
+    educationList: {
       display: 'flex',
       flexDirection: 'column',
       gap: '1.5rem',
       marginBottom: '4rem',
     },
-    experienceCard: {
+    educationCard: {
       ...sharedStyles.card,
     },
-    experienceCardHeader: {
+    educationCardHeader: {
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'flex-start',
@@ -64,31 +64,26 @@ const Experience = ({ experience }) => {
   };
 
   return (
-    <section id="experience" style={sharedStyles.section}>
-      <div style={styles.experienceSection}>
+    <section id="education" style={sharedStyles.section}>
+      <div style={styles.educationSection}>
         <div>
-          <div style={styles.experienceHeader}>
-            <div style={sharedStyles.iconContainer}>
-              <Briefcase color="#60a5fa" size={28} />
+          <div style={styles.educationHeader}>
+            <div style={sharedStyles.iconContainerPurple}>
+              <GraduationCap color="#a78bfa" size={28} />
             </div>
-            <h3 style={styles.experienceTitle}>Work Experience</h3>
+            <h3 style={styles.educationTitle}>Education</h3>
           </div>
-          <div style={styles.experienceList}>
-            {experience.map((job, index) => (
-              <div key={index} style={styles.experienceCard}>
-                <div style={styles.experienceCardHeader}>
+          <div style={styles.educationList}>
+            {education.map((edu, index) => (
+              <div key={index} style={styles.educationCard}>
+                <div style={styles.educationCardHeader}>
                   <div>
-                    <h4 style={styles.jobTitle}>{job.title}</h4>
-                    <p style={styles.company}>{job.company}</p>
+                    <h4 style={styles.jobTitle}>{edu.degree}</h4>
+                    <p style={{...styles.company, color: '#a78bfa'}}>{edu.school}</p>
                   </div>
-                  <span style={styles.period}>{job.period}</span>
+                  <span style={styles.period}>{edu.period}</span>
                 </div>
-                <p style={sharedStyles.description}>{job.description}</p>
-                <div style={styles.tags}>
-                  {job.skills.map((skill, skillIndex) => (
-                    <span key={skillIndex} style={sharedStyles.tagPurple}>{skill}</span>
-                  ))}
-                </div>
+                <p style={sharedStyles.description}>{edu.description}</p>
               </div>
             ))}
           </div>
@@ -98,4 +93,4 @@ const Experience = ({ experience }) => {
   );
 };
 
-export default Experience;
+export default Education;

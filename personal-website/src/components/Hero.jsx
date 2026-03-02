@@ -12,16 +12,10 @@ const Hero = ({ scrollToSection }) => {
     avatar: {
       width: '120px',
       height: '120px',
-      background: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%)',
       borderRadius: '50%',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
       margin: '0 auto 2rem',
-      fontSize: '2.5rem',
-      fontWeight: 'bold',
       boxShadow: '0 20px 60px rgba(59, 130, 246, 0.3)',
-      animation: 'pulse 2s infinite',
+      background: 'url("/me.jpeg") center/cover no-repeat',
     },
     badge: {
       display: 'inline-block',
@@ -80,7 +74,7 @@ const Hero = ({ scrollToSection }) => {
   return (
     <section id="home" style={sharedStyles.section}>
       <div style={styles.hero}>
-        <div style={styles.avatar}>TF</div>
+        <div style={styles.avatar}></div>
         <div style={styles.badge}>San Diego, CA</div>
         <h1 style={styles.h1}>Hi, I'm Tyler Frasca</h1>
         <p style={styles.subtitle}>Full-Stack Software Engineer</p>

@@ -43,11 +43,28 @@ const Projects = ({ projects }) => {
     },
   };
 
+  const headerStyle = {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.75rem',
+    marginBottom: '2rem',
+  };
+
+  const titleStyle = {
+    fontSize: '2rem',
+    fontWeight: 'bold',
+    color: '#ffffff',
+  };
+
   return (
     <section id="projects" style={sharedStyles.section}>
       <div style={{ width: '100%', maxWidth: '1200px' }}>
-        <h2 style={sharedStyles.sectionTitle}>Featured Projects</h2>
-        <p style={sharedStyles.sectionSubtitle}>A selection of my work</p>
+        <div style={headerStyle}>
+          <div style={sharedStyles.iconContainer}>
+            <Code color="#60a5fa" size={28} />
+          </div>
+          <h3 style={titleStyle}>Projects</h3>
+        </div>
 
         <div style={styles.projectsGrid}>
           {projects.map((project, index) => (
