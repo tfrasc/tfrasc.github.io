@@ -43,6 +43,15 @@ const Projects = ({ projects }) => {
       borderRadius: '0.75rem',
       objectFit: 'cover',
     },
+    projectCodeIconContainer: {
+      ...sharedStyles.iconContainer,
+      width: '50px',
+      height: '50px',
+      boxSizing: 'border-box',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
     tags: {
       display: 'flex',
       flexWrap: 'wrap',
@@ -66,7 +75,7 @@ const Projects = ({ projects }) => {
               <div style={styles.projectHeader}>
                 {project.icon
                   ? <img src={project.icon} alt={project.title} style={styles.projectIcon} />
-                  : <div style={sharedStyles.iconContainer}><Code color="#60a5fa" size={28} /></div>
+                  : <div style={styles.projectCodeIconContainer}><Code color="#60a5fa" size={24} /></div>
                 }
                 <div style={styles.projectLinks}>
                   {project.link && (

@@ -1,7 +1,7 @@
 export const projectsData = [
   {
     title: "memeO",
-    description: "A meme browser and dating iOS app all in one.",
+    description: "iOS dating app based on memes",
     tags: ["React-Native", "Ruby on Rails", "PostgreSQL"],
     link: "https://github.com/tfrasc/memeO/",
     demo: null,
@@ -9,8 +9,8 @@ export const projectsData = [
   },
   {
     title: "Cryptomon",
-    description: "Create NFT cards on the blockchain and battle",
-    tags: ["Solidity", "React"],
+    description: "Web app for creating and battling NFT cards on the Ethereum blockchain",
+    tags: ["Solidity", "React", "PostgreSQL"],
     link: "https://github.com/tfrasc/cryptomon/",
     demo: null
   },
@@ -23,8 +23,8 @@ export const projectsData = [
   },
   {
     title: "Radio Reddit",
-    description: "Google Chrome Extension for Reddit to continuously play music on music subreddits",
-    tags: ["JavaScript"],
+    description: "Google Chrome Extension for Reddit to continuously play music from your favorite subreddits",
+    tags: ["Javascript"],
     link: "https://github.com/tfrasc/Radio-Reddit-Chrome-Extension",
     demo: null,
     icon: "/radio-reddit.png"
@@ -45,7 +45,7 @@ export const experienceData = [
     company: "Square",
     period: "May 2019 - February 2026",
     description: "Software engineering at Square, working on financial technology solutions and payment systems.",
-    skills: ["Kotlin", "Golang", "PHP", "Ember", "PostgreSQL"]
+    skills: ["Golang", "PHP (Laravel)", "Kotlin", "React", "Ember", "Vue", "PostgreSQL", "MySQL"]
   },
   {
     title: "Software Engineering Intern",
@@ -73,7 +73,7 @@ export const experienceData = [
     company: "PCLender, LLC",
     period: "January 2016 - June 2016",
     description: "Learning, formally documenting, and teaching an in-house programming language. Agile Software Development using Jira. Quality Assurance and billable Professional Services work.",
-    skills: ["Agile", "QA", "Documentation"]
+    skills: []
   }
 ];
 
