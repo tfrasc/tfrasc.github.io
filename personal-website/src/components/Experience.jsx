@@ -44,6 +44,17 @@ const Experience = ({ experience }) => {
       color: '#94a3b8',
       fontSize: '0.875rem',
     },
+    bulletList: {
+      margin: '0 0 1.5rem 0',
+      paddingLeft: '1.25rem',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '0.5rem',
+    },
+    bulletItem: {
+      color: '#94a3b8',
+      lineHeight: '1.6',
+    },
     tags: {
       display: 'flex',
       flexWrap: 'wrap',
@@ -71,7 +82,14 @@ const Experience = ({ experience }) => {
                   </div>
                   <span style={styles.period}>{job.period}</span>
                 </div>
-                <p style={sharedStyles.description}>{job.description}</p>
+                {Array.isArray(job.description)
+                  ? <ul style={styles.bulletList}>
+                      {job.description.map((bullet, i) => (
+                        <li key={i} style={styles.bulletItem}>{bullet}</li>
+                      ))}
+                    </ul>
+                  : <p style={sharedStyles.description}>{job.description}</p>
+                }
                 <div style={styles.tags}>
                   {job.skills.map((skill, skillIndex) => (
                     <span key={skillIndex} style={sharedStyles.tag}>{skill}</span>
