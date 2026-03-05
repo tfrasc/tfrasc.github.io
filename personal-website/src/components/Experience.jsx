@@ -1,4 +1,108 @@
+import { useState, useRef } from 'react';
 import { styles as sharedStyles } from '../styles/sharedStyles';
+
+function parseMetric(val) {
+  const m = String(val).match(/^([^\d]*)(\d+\.?\d*)([^\d]*)$/);
+  if (!m) return null;
+  const decimals = m[2].includes('.') ? m[2].split('.')[1].length : 0;
+  return { prefix: m[1], num: parseFloat(m[2]), suffix: m[3], decimals };
+}
+
+const CONFETTI_COLORS = ['#60a5fa','#a78bfa','#34d399','#fbbf24','#f87171','#ffffff','#fb923c','#e879f9'];
+
+function MetricBox({ value, label, boxStyle, valueStyle, labelStyle }) {
+  const [hovered, setHovered] = useState(false);
+  const [particles, setParticles] = useState([]);
+  const [display, setDisplay] = useState(value);
+  const rafRef = useRef(null);
+  const parsed = parseMetric(value);
+
+  const handleEnter = () => {
+    setHovered(true);
+    if (!parsed) return;
+    cancelAnimationFrame(rafRef.current);
+    const t0 = performance.now();
+    const dur = 900;
+    const tick = (now) => {
+      const p = Math.min((now - t0) / dur, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      const cur = ease * parsed.num;
+      const fmt = parsed.decimals > 0 ? cur.toFixed(parsed.decimals) : Math.round(cur);
+      setDisplay(`${parsed.prefix}${fmt}${parsed.suffix}`);
+      if (p < 1) rafRef.current = requestAnimationFrame(tick);
+      else setDisplay(value);
+    };
+    rafRef.current = requestAnimationFrame(tick);
+  };
+
+  const handleLeave = () => {
+    setHovered(false);
+    cancelAnimationFrame(rafRef.current);
+    setDisplay(value);
+  };
+
+  const handleClick = () => {
+    if (particles.length) return;
+    const count = 20;
+    const initial = Array.from({ length: count }, (_, i) => ({
+      id: i,
+      color: CONFETTI_COLORS[i % CONFETTI_COLORS.length],
+      angle: (i / count) * Math.PI * 2,
+      size: Math.random() * 6 + 4,
+      dist: Math.random() * 35 + 25,
+      dx: 0, dy: 0, opacity: 1,
+      square: Math.random() > 0.5,
+    }));
+    setParticles(initial);
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      setParticles(prev => prev.map(p => ({
+        ...p,
+        dx: Math.cos(p.angle) * p.dist,
+        dy: Math.sin(p.angle) * p.dist,
+        opacity: 0,
+      })));
+    }));
+    setTimeout(() => setParticles([]), 700);
+  };
+
+  return (
+    <div
+      style={{
+        ...boxStyle,
+        position: 'relative',
+        overflow: 'visible',
+        transform: hovered ? 'scale(1.05)' : 'scale(1)',
+        boxShadow: hovered
+          ? '0 16px 40px rgba(37,99,235,0.65), 0 0 24px rgba(124,58,237,0.5)'
+          : '0 8px 24px rgba(37, 99, 235, 0.3)',
+        transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+        cursor: 'pointer',
+      }}
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+      onClick={handleClick}
+    >
+      {particles.map(p => (
+        <div
+          key={p.id}
+          style={{
+            position: 'absolute', top: '50%', left: '50%',
+            width: p.size, height: p.size,
+            borderRadius: p.square ? '2px' : '50%',
+            background: p.color,
+            transform: `translate(calc(-50% + ${p.dx}px), calc(-50% + ${p.dy}px))`,
+            opacity: p.opacity,
+            transition: 'transform 0.6s cubic-bezier(0.2,0.8,0.3,1), opacity 0.6s ease-out',
+            pointerEvents: 'none',
+            zIndex: 20,
+          }}
+        />
+      ))}
+      <div style={valueStyle}>{display}</div>
+      <div style={labelStyle}>{label}</div>
+    </div>
+  );
+}
 
 const Experience = ({ experience }) => {
   const featured = experience.find(e => e.featured);
@@ -76,7 +180,6 @@ const Experience = ({ experience }) => {
       background: 'linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)',
       borderRadius: '0.75rem',
       textAlign: 'center',
-      boxShadow: '0 8px 24px rgba(37, 99, 235, 0.3)',
     },
     metricValue: {
       fontSize: '1.75rem',
@@ -169,10 +272,14 @@ const Experience = ({ experience }) => {
               {featured.metrics && (
                 <div style={styles.metricsRow} className="metrics-row">
                   {featured.metrics.map((m, i) => (
-                    <div key={i} style={styles.metricBox}>
-                      <div style={styles.metricValue}>{m.value}</div>
-                      <div style={styles.metricLabel}>{m.label}</div>
-                    </div>
+                    <MetricBox
+                      key={i}
+                      value={m.value}
+                      label={m.label}
+                      boxStyle={styles.metricBox}
+                      valueStyle={styles.metricValue}
+                      labelStyle={styles.metricLabel}
+                    />
                   ))}
                 </div>
               )}
