@@ -1,7 +1,7 @@
 export const styles = {
   // Common Section Styles
   section: {
-    padding: '3rem 1.5rem',
+    padding: '2rem 1.5rem',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

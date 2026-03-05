@@ -1,45 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import Navigation from './components/Navigation';
 import Hero from './components/Hero';
-import Projects from './components/Projects';
 import Experience from './components/Experience';
-import Education from './components/Education';
-import Contact from './components/Contact';
-import { projectsData, experienceData, educationData } from './data/portfolioData';
+import { experienceData } from './data/portfolioData';
 
 export default function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
-
-  // Smooth scroll to section
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
-    setIsMenuOpen(false);
-  };
-
-  // Track active section on scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ['home', 'experience', 'projects', 'education'];
-      const scrollPosition = window.scrollY;
-
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section);
-            break;
-          }
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const containerStyle = {
     minHeight: '100vh',
     background: '#0d0d0d',
@@ -53,34 +16,38 @@ export default function App() {
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { overflow-x: hidden; }
         a { text-decoration: none; }
-        button:hover { opacity: 0.9; }
+        .btn-resume {
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .btn-resume:hover, .btn-resume:focus-visible {
+          transform: translateY(-2px);
+          box-shadow: 0 16px 40px rgba(37, 99, 235, 0.5);
+          outline: none;
+        }
+        .btn-social {
+          transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+        }
+        .btn-social:hover, .btn-social:focus-visible {
+          background: rgba(255, 255, 255, 0.08) !important;
+          border-color: rgba(255, 255, 255, 0.35) !important;
+          color: #ffffff !important;
+          transform: translateY(-2px);
+          outline: none;
+        }
         @media (max-width: 768px) {
-          .nav-links { display: none; }
-          .mobile-menu-btn { display: block !important; }
-          .experience-header { flex-direction: column; align-items: flex-start !important; }
+          .metrics-row > * { flex: 1 1 100% !important; min-width: 0 !important; }
+          .hero-buttons { flex-direction: column !important; align-items: stretch !important; }
+          .hero-buttons a { justify-content: center !important; }
         }
       `}</style>
 
-      <Navigation
-        activeSection={activeSection}
-        isMenuOpen={isMenuOpen}
-        setIsMenuOpen={setIsMenuOpen}
-        scrollToSection={scrollToSection}
-      />
+      <Hero />
 
-      <Hero scrollToSection={scrollToSection} />
+      <Experience experience={experienceData} />
 
-      <Experience 
-        experience={experienceData} 
-      />
-
-      <Projects projects={projectsData} />
-
-      <Education 
-        education={educationData} 
-      />
-      
-      <Contact />
+      <footer style={{ textAlign: 'center', padding: '2rem', color: '#334155', fontSize: '0.875rem' }}>
+        © {new Date().getFullYear()} Tyler Frasca. All rights reserved.
+      </footer>
     </div>
   );
 }
