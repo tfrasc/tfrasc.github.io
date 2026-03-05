@@ -17,14 +17,9 @@ const Hero = () => {
       boxShadow: '0 20px 60px rgba(59, 130, 246, 0.3)',
       background: 'url("/me.jpeg") center/cover no-repeat',
     },
-    badge: {
-      display: 'inline-block',
-      padding: '0.5rem 1rem',
-      background: 'rgba(59, 130, 246, 0.1)',
-      border: '1px solid rgba(59, 130, 246, 0.2)',
-      borderRadius: '9999px',
+    location: {
       fontSize: '0.875rem',
-      color: '#60a5fa',
+      color: 'rgb(148, 163, 184)',
       marginBottom: '1.5rem',
     },
     h1: {
@@ -95,7 +90,7 @@ const Hero = () => {
     <section id="home" style={{ ...sharedStyles.section, paddingTop: '4rem' }}>
       <div style={styles.hero}>
         <div style={styles.avatar}></div>
-        <div style={styles.badge}>San Diego, CA</div>
+        <p style={styles.location}>San Diego, CA</p>
         <h1 style={styles.h1}>Hi, I'm Tyler Frasca</h1>
         <p style={styles.subtitle}>Senior Software Engineer</p>
         <p style={styles.description}>

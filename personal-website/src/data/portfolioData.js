@@ -49,7 +49,7 @@ export const experienceData = [
     metrics: [
       { value: "99.99%", label: "SLO Achieved" },
       { value: "66%", label: "Infra Load Reduced" },
-      { value: "+24%", label: "Seller Signup Rate" },
+      { value: "+24%", label: "User Signup Rate" },
     ],
     tagline: "Owned reliability, expansion, and platform architecture for Payment Links.",
     skills: ["Golang", "Laravel", "Kotlin", "React", "Ember", "Vue", "PostgreSQL", "MySQL"]
@@ -58,7 +58,7 @@ export const experienceData = [
     title: "Software Engineer",
     company: "Block / Square",
     period: "May 2019 – Nov 2021",
-    tagline: "Led international expansion of Payment Links and drove key onboarding improvements across multiple seller touchpoints.",
+    tagline: "Led international expansion of Payment Links and drove key onboarding improvements across multiple user touchpoints.",
     skills: ["Laravel", "Ember", "Vue", "PostgreSQL", "MySQL"]
   },
   {
