@@ -94,7 +94,7 @@ const Hero = () => {
         <h1 style={styles.h1}>Hi, I'm Tyler Frasca</h1>
         <p style={styles.subtitle}>Senior Software Engineer</p>
         <p style={styles.description}>
-          With nearly a decade of experience as a full-stack engineer, I have worked at both Big Tech and Startups and can build scalable, reliable, and speedy systems. I love to learn, enjoy a challenge, and care deeply about helping others however I can.
+          Full-stack engineer with 10 years of experience building reliable systems at companies like Block and early-stage startups. I care about craft, enjoy a good hard problem, and thrive working on things that actually reach people.
         </p>
         <p style={styles.description}>
           Outside of work, I love to rock climb, snowboard, mountain bike, surf, and make music.

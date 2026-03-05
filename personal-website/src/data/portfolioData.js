@@ -45,7 +45,7 @@ export const experienceData = [
     company: "Block / Square",
     period: "Nov 2021 – Feb 2026",
     featured: true,
-    summary: "Served as primary engineer for Payment Links across a 4-year tenure, owning reliability, international expansion, and cross-platform architecture. Drove the product to 99.99% SLO — establishing it as the reliability benchmark for the team.",
+    summary: "Primary engineer for Payment Links — owning reliability, international rollout, and cross-platform architecture. Drove the product to 99.99% SLO by resolving critical outages, mitigating DDoS SEVs, and leading a 23,000-merchant platform migration. Expanded global payment method support and designed a proxy service adopted across multiple teams.",
     metrics: [
       { value: "99.99%", label: "SLO Achieved" },
       { value: "66%", label: "Infra Load Reduced" },
@@ -58,14 +58,21 @@ export const experienceData = [
     title: "Software Engineer",
     company: "Block / Square",
     period: "May 2019 – Nov 2021",
-    tagline: "Led international expansion of Payment Links and drove key onboarding improvements across multiple user touchpoints.",
-    skills: ["Laravel", "Ember", "Vue", "PostgreSQL", "MySQL"]
+    tagline: "Led Payment Links expansion across Japan, Canada, Australia, UK, and Ireland as sole engineer. Drove a multi-quarter onboarding initiative that increased seller verification completion by 23% and signup rate by 24%.",
+    skills: ["Golang", "Laravel", "Ember", "Vue", "PostgreSQL", "MySQL"]
+  },
+  {
+    title: "Software Engineering Intern",
+    company: "Block / Square",
+    period: "June 2018 – Aug 2018",
+    tagline: "Contributed to Payment Links features and onboarding flows, laying the foundation for a full-time engineering role.",
+    skills: ["Laravel", "Vue", "MySQL"]
   },
   {
     title: "Web Developer & Teaching Assistant",
     company: "Elevate Blue",
     period: "June 2016 – June 2018",
-    tagline: "Shipped production features across web and mobile at an early-stage startup, while mentoring the next generation of developers.",
+    tagline: "Shipped full-stack features across web and mobile at an early-stage startup — building RESTful APIs, third-party integrations, and React Native apps. Also served as a TA for an in-house coding bootcamp, mentoring students through a full-stack curriculum.",
     skills: ["Ruby on Rails", "Node.js", "React Native", "PostgreSQL", "MongoDB"]
   }
 ];
