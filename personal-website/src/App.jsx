@@ -57,6 +57,7 @@ export default function App() {
         @media (max-width: 768px) {
           .nav-links { display: none; }
           .mobile-menu-btn { display: block !important; }
+          .experience-header { flex-direction: column; align-items: flex-start !important; }
         }
       `}</style>
 

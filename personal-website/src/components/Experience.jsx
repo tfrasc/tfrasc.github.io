@@ -1,5 +1,5 @@
 import React from 'react';
-import { Briefcase } from 'lucide-react';
+import { Briefcase, Download } from 'lucide-react';
 import { styles as sharedStyles } from '../styles/sharedStyles';
 
 const Experience = ({ experience }) => {
@@ -66,11 +66,21 @@ const Experience = ({ experience }) => {
     <section id="experience" style={sharedStyles.section}>
       <div style={styles.experienceSection}>
         <div>
-          <div style={sharedStyles.sectionHeader}>
-            <div style={sharedStyles.iconContainer}>
-              <Briefcase color="#60a5fa" size={28} />
+          <div className="experience-header" style={{ ...sharedStyles.sectionHeader, justifyContent: 'space-between' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+              <div style={sharedStyles.iconContainer}>
+                <Briefcase color="#60a5fa" size={28} />
+              </div>
+              <h3 style={sharedStyles.sectionHeading}>Work Experience</h3>
             </div>
-            <h3 style={sharedStyles.sectionHeading}>Work Experience</h3>
+            <a
+              href="/Tyler_Frasca_Resume_2026.pdf"
+              download
+              style={sharedStyles.button}
+            >
+              <Download size={16} style={{ display: 'inline', marginRight: '0.5rem', verticalAlign: 'middle' }} />
+              <span style={{ verticalAlign: 'middle' }}>Resume</span>
+            </a>
           </div>
           <div style={styles.experienceList}>
             {experience.map((job, index) => (
