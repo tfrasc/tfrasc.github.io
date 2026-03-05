@@ -52,14 +52,14 @@ export const experienceData = [
       { value: "+24%", label: "Seller Signup Rate" },
     ],
     tagline: "Owned reliability, expansion, and platform architecture for Payment Links.",
-    skills: ["Golang", "PHP (Laravel)", "Kotlin", "React", "Ember", "Vue", "PostgreSQL", "MySQL"]
+    skills: ["Golang", "Laravel", "Kotlin", "React", "Ember", "Vue", "PostgreSQL", "MySQL"]
   },
   {
     title: "Software Engineer",
     company: "Block / Square",
     period: "May 2019 – Nov 2021",
     tagline: "Led international expansion of Payment Links and drove key onboarding improvements across multiple seller touchpoints.",
-    skills: ["PHP (Laravel)", "Ember", "Vue", "PostgreSQL", "MySQL"]
+    skills: ["Laravel", "Ember", "Vue", "PostgreSQL", "MySQL"]
   },
   {
     title: "Web Developer & Teaching Assistant",
