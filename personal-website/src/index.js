@@ -1,5 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+console.log(`
+                __
+               / _)
+      _.----._/ /
+     /         /       Welcome to Tyler's portfolio website!
+  __/ (  | (  |        Feel free to look around :)
+ /__.-'|_|--|_|
+`);
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
