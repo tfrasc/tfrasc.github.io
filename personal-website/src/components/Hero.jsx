@@ -97,7 +97,7 @@ const Hero = () => {
           Full-stack engineer with 10 years of experience building reliable systems at companies like Block and early-stage startups. I care about craft, enjoy a good hard problem, and thrive working on things that actually reach people.
         </p>
         <p style={styles.description}>
-          Outside of work, I love to rock climb, snowboard, mountain bike, surf, and make music.
+          Outside of work, I love to rock climb, snowboard, mountain bike, surf, make music, and go birding.
         </p>
         <div style={styles.socialLinks} className="hero-buttons">
           <a href="/Tyler_Frasca_Resume_2026.pdf" download style={styles.resumeLink} className="btn-resume">
